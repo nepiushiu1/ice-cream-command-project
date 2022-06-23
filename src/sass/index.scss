@@ -1,2 +1,29 @@
-@import './common';
-@import './example';
+@import 
+'abstracts/variables',
+'abstracts/mixins';
+
+@import 
+'vendors/normalize',
+'vendors/visually-hidden';
+
+@import 
+'base/base',
+'base/reset',
+'base/container',
+'base/common',
+'base/grid';
+
+// @import 'components/navigation',
+
+
+
+@import 
+'layout/header',
+'layout/hero',
+'layout/products',
+'layout/about',
+'layout/advantages',
+'layout/gallery',
+'layout/reviews',
+'layout/contacts',
+'layout/footer';
