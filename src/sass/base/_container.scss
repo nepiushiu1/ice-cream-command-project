@@ -1,0 +1,30 @@
+
+// breakpoints
+// 1. 320px
+// 2. 768px
+// 3. 1280px
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    margin-left: auto;
+    margin-right: auto;
+   
+ // mobile sreen from 320px
+ @include mq(mobile) {
+      width: 280px;
+    }
+
+  // tablet sreen from 768px
+  @include mq(tablet) {
+    width: 704px;
+  }
+
+  // desktop sreen from 1280px
+  @include mq(desktop) {
+    width: 1240px;
+  }
+}
+
+
