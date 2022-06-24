@@ -10,6 +10,7 @@
     
     margin-left: auto;
     margin-right: auto;
+    outline: 1px solid tomato;
    
  // mobile sreen from 320px
  @include mq(mobile) {
