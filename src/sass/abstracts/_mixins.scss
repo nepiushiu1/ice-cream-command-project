@@ -1,3 +1,10 @@
+@mixin centeredFlex($type) {
+  display: $type;
+  align-items: center;
+  justify-content: center;
+  // flex-wrap: wrap;
+}
+
 @mixin mq($type) {
   $mobile: 320px;
   $tablet: 768px;
