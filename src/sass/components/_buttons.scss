@@ -10,6 +10,7 @@
     &--mode-light {
       color: var(--btn-accent-cl);
       background-color: var(--white-cl);
+      border: 1px solid var(--btn-accent-cl);
       transition:
           transform var(--transition-duration) var(--transition-timing-function);
 
@@ -22,6 +23,8 @@
     &--mode-dark {
       color: var(--white-cl);
       background-color: var(--btn-accent-cl);
+      transition:
+          transform var(--transition-duration) var(--transition-timing-function);
 
       &:hover,
       &:focus {
