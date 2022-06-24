@@ -2,7 +2,7 @@
 // breakpoints
 // 1. 320px
 // 2. 768px
-// 3. 1280px
+// 3. 1200px
 
 .container {
     padding-left: 20px;
@@ -22,9 +22,9 @@
     width: 704px;
   }
 
-  // desktop sreen from 1280px
+  // desktop sreen from 1200px
   @include mq(desktop) {
-    width: 1240px;
+    width: 1200px;
   }
 }
 
