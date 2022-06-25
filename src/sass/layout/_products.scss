@@ -19,23 +19,13 @@
 }
 .product__title {
   font-family: var(--title-font);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 1.15;
-
-  letter-spacing: 0.04em;
+  @include fonts(400, 34px, 39px, 0.04em);
   text-transform: uppercase;
   color: var(--accent-cl);
   margin-top: 15px;
   margin-bottom: 8px;
 }
-/*.list {
-}
-.products__list {
-}
-.item {
-}*/
+
 .products__item {
   position: relative;
   margin-top: 140px;
@@ -89,19 +79,15 @@
 
 .product-name {
   font-family: var(--title-font);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.15;
+  @include fonts(400, 20px, 23px, 0.04em);
   text-align: center;
-  letter-spacing: 0.04em;
   text-transform: uppercase;
+
   color: var(--white-cl);
   margin-top: 160px;
   margin-bottom: 32px;
-  display: flex;
+  @include centeredFlex(flex);
   flex-direction: column;
-  align-items: center;
 }
 
 .product-name::after {
@@ -115,23 +101,16 @@
 }
 
 .product-description {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.5;
+  @include fonts(700, 14px, 21px, 0.04em);
   text-align: center;
-  letter-spacing: 0.04em;
   color: var(--white-cl);
   margin-bottom: 32px;
   max-width: 200px;
 }
 
 .product-btn {
-  display: flex;
+  @include centeredFlex(flex);
 
-  align-items: center;
-
-  justify-content: center;
   width: 40px;
   height: 40px;
   background-color: var(--white-cl);
