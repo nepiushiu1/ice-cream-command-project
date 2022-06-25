@@ -6,13 +6,13 @@
 .section-label {
     font-family: var(--title-font);
     text-align: center;
-    @include fonts (400, 30px, 1.13, 0.04em, uppercase);
+    @include fonts(400, 18px, 21px, 0.04em, uppercase);
     color: var(--pink-cl);
   }
 
 .section-title {
     font-family: var(--title-font);
     text-align: center;
-    @include fonts (400, 58px, 1.14, 0.06em, uppercase);
+    @include fonts(400, 34px, 39px, 0.04em, uppercase);
     color: var(--accent-cl);
   }
