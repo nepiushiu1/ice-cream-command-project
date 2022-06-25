@@ -1,4 +1,55 @@
-/*#region 5 Advantages*/
- 
-  
-/*#endregion*/
+.advantages {
+    width: 320px;
+    background: var(--light-pink-bg-cl);
+    padding-top: 0px;
+
+    @media screen and (min-width: 1280px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.advantages__grid-item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.advantages__grid-item::before {
+    display: block;
+    content: "";
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: left;
+    // background-color: transparent;
+    margin-bottom: 16px;
+}
+
+.advantages__grid-item:nth-child(1)::before {
+    // background-image: url('/src/images/advantages/bucketmilk.png');
+    background-size: 33px 50px;
+}
+
+.advantages__grid-item:nth-child(2)::before {
+    // background-image: url('/src/images/advantages/bucketapplepng.png');
+    background-size: 50px 50px;
+}
+
+.advantages__grid-item:nth-child(3)::before {
+    // background-image: url('/src/images/advantages/icecream.png');
+    background-size: 44px 50px;
+}
+
+.advantages__grid-title {
+    font-family: 'Titan One';
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent-cl);
+    margin-bottom: 19px;
+}
+
+.advantages__grid {
+    margin-right: 64px;
+    margin-left: 26px;
+    gap: 0;
+}
