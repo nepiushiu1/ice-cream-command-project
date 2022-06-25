@@ -5,13 +5,12 @@
     min-width: 167px;
     padding: 10px;
     border-radius: 22px;
-    border: 0;
+    border: none;
     cursor: pointer;
 
     &--mode-light {
       color: var(--btn-accent-cl);
       background-color: var(--white-cl);
-      border: 1px solid var(--btn-accent-cl);
       transition:
           background-color var(--transition-duration) var(--transition-timing-function);
 
