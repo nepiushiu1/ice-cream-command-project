@@ -1,36 +1,23 @@
 .footer {
   background: #fff5f6;
-  // padding-top: 20px;
-  // padding-bottom: 20px;
 }
 
 .footer__text {
   font-family: var(--title-font);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
+  @include fonts(400, 18px, 21px, 0.04em);
   text-transform: uppercase;
   color: var(--pink-cl);
   text-align: left;
-
   width: 232px;
-
   margin-bottom: 16px;
 }
 .footer__tagline {
   font-family: var(--title-font);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 39px;
-  letter-spacing: 0.04em;
+  @include fonts(400, 34px, 39px, 0.04em);
   text-transform: uppercase;
-  color: #d41443;
+  color: var(--accent-cl);
   text-align: left;
-
   width: 200px;
-
   margin-bottom: 40px;
 }
 
@@ -48,10 +35,8 @@
   justify-content: flex-end;
 }
 .accession__social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fea5bb;
+  @include centeredFlex(flex);
+  color: var(--pink-cl);
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -60,10 +45,9 @@
   transition: background-color var(--transition-timing-function),
     color var(--transition-timing-function);
 
-  // колір потрібно встановити!!!!!!!!
   &:hover,
   &:focus {
-    background-color: #d41443;
+    background-color: var(--accent-cl);
     color: #2196f3;
   }
 }
@@ -73,21 +57,12 @@
 }
 
 .footer__phone-text {
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 186%;
-
-  color: #000000;
+  @include fonts(700, 12px, 18px, 0.04em);
+  color: var(--black-cl);
 }
 
 .footer__phone {
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 186%;
+  @include fonts(700, 12px, 21px, 0.04em);
 
   text-align: right;
 
@@ -103,12 +78,7 @@
   text-align: center;
 }
 .footer__safety {
-  font-family: var(--main-font);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 152%;
-  /* or 21px */
+  @include fonts(700, 14px, 21px, 0.04em);
 
-  color: #907e82;
+  color: var(--about-cl);
 }
