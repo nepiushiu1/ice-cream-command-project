@@ -1,22 +1,19 @@
 .about {
     background-color: var(--light-pink-bg-cl);
+    background-repeat: no-repeat;
+    background-position: 50% 550px;
+    background-image: url(../images/about/about-bg_sm.png);
+
+    @include mq(retina) {
+        background-image: url(../images/about/about-bg_sm@2x.png);
+    }
 
     &__title {
         margin-bottom: 32px;
     }
 
     &__thumb{
-        position: relative;
         margin-bottom: 40px;
-    }
-
-    &__img {
-        position: absolute;
-        top: 395px;
-        left: 0;
-        @include mq(tablet){
-            display: none;
-        }
     }
 
     &__list{
@@ -35,7 +32,7 @@
 
     &__item:first-child{
         color: var(--black-cl);
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
 
     &__item:last-child{
@@ -43,20 +40,19 @@
     }
 
     &__btn {
-        display: flex;
-        align-items: center;
-
         padding: 13px 37px;
         min-width: 176px;
         border-radius: 22px;
+        border: none;
 
         @include fonts(700, 14px, 18px, null);
         text-align: center;
-    }
 
-    &__icon {
-        fill: currentColor;
-        margin-left: 14px;
+        &__btn:hover,
+        &__btn:focus {
+            background-color: #ECEBEB;
+            ;
+        }
     }
 }
 
