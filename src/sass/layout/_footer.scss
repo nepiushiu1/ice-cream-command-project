@@ -1,3 +1,114 @@
-/*#region 7 Reviews */
+.footer {
+  background: #fff5f6;
+  // padding-top: 20px;
+  // padding-bottom: 20px;
+}
 
- /*#endregion*/
+.footer__text {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--pink-cl);
+  text-align: left;
+
+  width: 232px;
+
+  margin-bottom: 16px;
+}
+.footer__tagline {
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+  text-align: left;
+
+  width: 200px;
+
+  margin-bottom: 40px;
+}
+
+.accession__social {
+  margin-bottom: 40px;
+}
+
+.accession__team-icons:not(:last-child) {
+  margin-right: 30px;
+}
+
+.accession__social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.accession__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fea5bb;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fea5bb;
+
+  transition: background-color var(--transition-timing-function),
+    color var(--transition-timing-function);
+
+  // колір потрібно встановити!!!!!!!!
+  &:hover,
+  &:focus {
+    background-color: #d41443;
+    color: #2196f3;
+  }
+}
+
+.accession__icons {
+  fill: #ffffff;
+}
+
+.footer__phone-text {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+
+  color: #000000;
+}
+
+.footer__phone {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 186%;
+
+  text-align: right;
+
+  color: var(--accent-cl);
+}
+
+.footer__info {
+  border-bottom: 1px solid #e1e1e1;
+  margin-bottom: 16px;
+}
+
+.footer_box-safety {
+  text-align: center;
+}
+.footer__safety {
+  font-family: var(--main-font);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 152%;
+  /* or 21px */
+
+  color: #907e82;
+}
