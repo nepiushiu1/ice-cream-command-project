@@ -20,4 +20,8 @@
 <symbol id="narrow-right-red" viewBox="0 0 7 10">
 <path d="M1.42041 1L5.70162 5L1.42041 9" stroke="#D41443" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 
+<symbol id="icon-close" viewBox="0 0 18 18">
+<path d="M15 4.108 13.892 3 9.5 7.392 5.108 3 4 4.108 8.392 8.5 4 12.892 5.108 14 9.5 9.608 13.892 14 15 12.892 10.608 8.5 15 4.108Z"/> 
+</symbol>
+
 </defs></svg>
