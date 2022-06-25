@@ -1,4 +1,45 @@
-<article class="about" id="uk">
-  <h1>About</h1>
-  <div class="background"></div>
-</article>
+<section class="about section">
+  <div class="container">
+    <p class="sub-title">Tradition and love</p>
+    <h2 class="section-title about__title">How it’s made?</h2>
+
+    <div class="about__thumb">
+      <picture>
+      
+        <!-- <source media="(min-width: 1280px)" 
+                      srcset="./images/employees/team-2_lg.jpg 1x,
+                              ./images/employees/team-2_lg@2x.jpg 2x" 
+                  type="image/jpg" />
+              
+                  <source media="(min-width: 768px)" 
+                  srcset="./images/employees/team-2_md.jpg 1x,
+                          ./images/employees/team-2_md@2x.jpg 2x" 
+                  type="image/jpg" /> -->
+      
+        <source media="(max-width: 767px)" srcset="./images/about/about_sm.png 1x,
+                    ./images/about/about_sm@2x.png 2x" type="image/png" />
+      
+        <img class="img about__img" src="./images/about/about_sm.png" alt="кувшин молока и корова" width="280" height="279"
+          loading="lazy" />
+      
+      </picture>
+    </div>
+
+    <ul class="about__list list">
+      <li class="about__item">
+        <p>Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
+        eget, egestas eros.
+        Maecenas eleifend erat at justo fringilla.</p>
+      </li>
+      <li class="about__item">
+        <p>Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat.
+        Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.</p>
+      </li>
+      <li class="about__item">
+        <p>Aliquam erat volutpat. Aenean accumsan.</p>
+      </li>
+    </ul>
+
+    <button class="about__btn btn" type="button" data-modal-open>Read more</button>
+  </div>
+</section>
