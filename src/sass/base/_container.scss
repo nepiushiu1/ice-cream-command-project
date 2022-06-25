@@ -14,12 +14,12 @@
    
  // mobile sreen from 320px
  @include mq(mobile) {
-      width: 280px;
+      width: 320px;
     }
 
   // tablet sreen from 768px
   @include mq(tablet) {
-    width: 704px;
+    width: 768px;
   }
 
   // desktop sreen from 1200px
