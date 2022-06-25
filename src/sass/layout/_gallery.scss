@@ -1,6 +1,49 @@
 /*#region 6 Gallery*/
  .gallery{
-    background-color: #FFF5F6;
-    outline: 1px solid tomato;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+
+    background-image:
+            linear-gradient(to top, #fff 85%, #FFF5F6 85%);
+        background-size: 100%, contain;
+        background-position: center;
+        background-repeat: no-repeat;
  }
+
+.gallery--list{
+padding: 0;
+
+    @include mq(mobile){
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        width: 100%;
+    }
+}
+.gallery--item{
+
+
+@include mq(mobile){
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+}
+
+
+.flex{
+    @include mq(mobile){
+        display: flex;
+        justify-content: center;
+    }
+}
+
+   
+ li{
+    text-decoration: none;
+    list-style: none;
+ }
+
  /*#endregion*/
