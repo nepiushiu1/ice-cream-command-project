@@ -44,18 +44,11 @@
         &__link:hover {
         color: var(--accent-cl);
     }
-
-
-
-
- 
-
 }
 
 .mobile-menu.is-open {
     @include mq(mobile-only) {
         display: flex;
         transform: translateX(0);
-
     }
 }
