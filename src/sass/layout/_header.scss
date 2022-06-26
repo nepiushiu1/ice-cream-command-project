@@ -1,9 +1,10 @@
 /*#region 1 header*/
  .header {
      padding-top: 8px;
-
-     background-color: var(--pink-bg-cl);
-
+     position: fixed;
+     top: 0;
+     z-index: 999;
+     background-color: rgba(255, 184, 202, 0.9);
  }
 
  .header__container {
