@@ -5,6 +5,7 @@
         margin-bottom: 15px;
         @include mq(tablet){
             margin-bottom: 16px;
+            @include fonts(400, 26px, 30px, 0.04em, uppercase);
         }
     }
 
@@ -12,12 +13,16 @@
         margin-bottom: 32px;
         @include mq(tablet) {
             margin-bottom: 40px;
+            @include fonts(400, 48px, 55px, 0.04em, uppercase);
         }
     }
 
     &__content{
-        display: flex;
-        align-items: center;
+        @include mq(tablet){
+            display: flex;
+            align-items: flex-start;
+        }
+        
     }
 
     &__thumb{
@@ -27,6 +32,8 @@
         @include mq(tablet){
             margin-right: 32px;
             margin-bottom: 0px;
+            width: 336px;
+            height: 335px;
         }
     }
 
@@ -42,6 +49,10 @@
 
     &__list{
         margin-bottom: 15px;
+
+        @include mq(tablet){
+            margin-bottom: 40px;
+        }
     }
 
     &__item {
@@ -52,6 +63,12 @@
 
         font-weight: 500;
         line-height: 1.62;
+
+        @include mq(tablet){
+            width: 334px;
+            font-size: 14px;
+            line-height: 1.76;
+        }
     }
 
     &__item:first-child{
