@@ -2,23 +2,62 @@
   background: #fff5f6;
 }
 
-.footer__text {
-  font-family: var(--title-font);
-  @include fonts(400, 18px, 21px, 0.04em);
-  text-transform: uppercase;
-  color: var(--pink-cl);
-  text-align: left;
-  width: 232px;
-  margin-bottom: 16px;
+.footer__info {
+  // padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include mq(tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  @include mq(desktop) {
+    padding-bottom: 60px;
+  }
 }
-.footer__tagline {
-  font-family: var(--title-font);
-  @include fonts(400, 34px, 39px, 0.04em);
-  text-transform: uppercase;
-  color: var(--accent-cl);
+
+.section-label {
+  text-align: left;
+
+  margin-bottom: 16px;
+
+  @include mq(mobile) {
+    width: 232px;
+  }
+
+  @include mq(tablet) {
+    width: 340px;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+  }
+
+  @include mq(desktop) {
+    width: 100%;
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+.section-title {
   text-align: left;
   width: 200px;
-  margin-bottom: 40px;
+
+  @include mq(mobile) {
+    width: 200px;
+  }
+
+  @include mq(tablet) {
+    width: 340px;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: 0.06em;
+  }
+
+  @include mq(desktop) {
+    width: 100%;
+    font-size: 58px;
+    line-height: 66px;
+  }
 }
 
 .accession__social {
@@ -50,32 +89,68 @@
     background-color: var(--accent-cl);
     color: #2196f3;
   }
+
+  @include mq(tablet) {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .accession__icons {
   fill: #ffffff;
+
+  @include mq(tablet) {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .footer__phone-text {
   @include fonts(700, 12px, 18px, 0.04em);
   color: var(--black-cl);
+
+  @include mq(tablet) {
+    font-size: 14px;
+  }
+
+  @include mq(desktop) {
+    font-size: 16px;
+  }
 }
 
 .footer__phone {
+  display: block;
   @include fonts(700, 12px, 21px, 0.04em);
 
   text-align: right;
 
   color: var(--accent-cl);
+
+  @include mq(tablet) {
+    font-size: 14px;
+  }
+
+  @include mq(desktop) {
+    font-size: 16px;
+  }
 }
 
 .footer__info {
   border-bottom: 1px solid #e1e1e1;
-  margin-bottom: 16px;
 }
 
 .footer_box-safety {
-  text-align: center;
+  @include mq(mobile-only) {
+    text-align: center;
+    padding-top: 16px;
+  }
+
+  @include mq(tablet) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 8px;
+  }
 }
 .footer__safety {
   @include fonts(700, 14px, 21px, 0.04em);
