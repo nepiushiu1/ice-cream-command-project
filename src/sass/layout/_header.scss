@@ -8,9 +8,7 @@
 
  .header__container {
      display: flex;
-     justify-content: space-between;
-     align-content: center;
-     align-items: center;
+     position: relative;
  }
 
    .menu-button {
@@ -18,11 +16,11 @@
        z-index: 10;
        top: 0;
        bottom: 0;
-       right: 30px;
+       right: 0;
 
        border: 0;
        background-color: transparent;
-       fill: white;
+       fill: var(--accent-cl);
 
        @include mq(tablet) {
            display: none;
@@ -36,7 +34,7 @@
 
    .menu-button:hover .icon-cross,
    .menu-button:focus .icon-cross {
-       fill: var(--btn-dark-cl);
+        fill: white;
    }
 
    .icon-cross {
@@ -50,47 +48,5 @@
    .menu-button.is-open .icon-menu {
        display: none;
    }
-
-   // .menu-button.is-open .mobile-menu {
-   //   transform: translateX(0);
-
-   // }
-
-//  .btn-mob-menu {
-//     height: 12px;
-//     width: 20px;
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
-//     margin: 0;
-//     padding: 0;
-//     background-color: transparent;
-//     border: none;
-
-//     &__icon {
-//             fill: var(--accent-cl);
-//         }
-    
-//     &__cross {
-//             fill: var(--white-cl);
-//         }
-//     }
-    
-//     .mob-menu {
-//         position: fixed;
-//         top: 0;
-//         left: 0;
-//         width: 100vw;
-//         height: 100vh;
-//         background-color: #E17992;
-//         z-index: 100;
-//         transform: translateX(100%);
-//     }
-    
-//     .mob-menu.is-open {
-//         transform: translateX(0);
-//     }
-
-
 
  /*#endregion*/
