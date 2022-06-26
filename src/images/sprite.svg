@@ -14,13 +14,13 @@
                 fill="#D41443" />
         </symbol>
 
-<symbol id="icon-menu" viewBox="0 0 40 40">
-<path  d="M8 14.6667V12H32V14.6667H8ZM8 21.3333H32V18.6667H8V21.3333ZM8 28H32V25.3333H8V28Z"/>
-</symbol>
-
-        <symbol id="icon-cross" viewBox="0 0 40 40">
+        <symbol id="icon-menu" viewBox="0 0 448 512">
             <path
-                d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z" />
+                d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" />
+        </symbol>
+
+        <symbol id="icon-cross" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="m1.26 1 13.48 14M1 14.74 15 1.26" />
         </symbol>
 
         <symbol id="icon-phone" viewBox="0 0 20 32">
@@ -40,9 +40,9 @@
                 stroke-linejoin="round" />
         </symbol>
 
-        <symbol id="narrow-right-red" viewBox="0 0 7 10">
-            <path d="M1.42041 1L5.70162 5L1.42041 9" stroke="#D41443" stroke-width="2" stroke-linecap="round"
-                stroke-linejoin="round" />
+        <symbol id="narrow-right-red" viewBox="0 0 320 512">
+            <path
+                d="M96 480c-8.188 0-16.38-3.125-22.62-9.375c-12.5-12.5-12.5-32.75 0-45.25L242.8 256L73.38 86.63c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l192 192c12.5 12.5 12.5 32.75 0 45.25l-192 192C112.4 476.9 104.2 480 96 480z" />
         </symbol>
 
         <symbol id="icon-close" viewBox="0 0 18 18">
