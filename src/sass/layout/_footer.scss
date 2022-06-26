@@ -16,7 +16,7 @@
   }
 }
 
-.section-label {
+.footer__label {
   text-align: left;
 
   margin-bottom: 16px;
@@ -38,12 +38,13 @@
     line-height: 34px;
   }
 }
-.section-title {
+.footer__title {
   text-align: left;
   width: 200px;
 
   @include mq(mobile) {
     width: 200px;
+    margin-bottom: 40px;
   }
 
   @include mq(tablet) {
@@ -51,6 +52,7 @@
     font-size: 48px;
     line-height: 55px;
     letter-spacing: 0.06em;
+    margin-bottom: 0px;
   }
 
   @include mq(desktop) {
