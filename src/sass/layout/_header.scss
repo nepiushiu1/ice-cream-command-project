@@ -3,7 +3,7 @@
      padding-top: 8px;
      position: fixed;
      top: 0;
-     z-index: 999;
+     z-index: 10;
      background-color: rgba(255, 184, 202, 0.9);
  }
 
@@ -12,16 +12,18 @@
      position: relative;
  }
 
-   .menu-button {
+ .menu-button {
        position: absolute;
-       z-index: 10;
+       z-index: 100;
        top: 0;
        bottom: 0;
        right: 0;
+       cursor: pointer;
 
        border: 0;
        background-color: transparent;
        fill: var(--accent-cl);
+       transition: fill var(--transition-duration) var(--transition-timing-function);
 
        @include mq(tablet) {
            display: none;
