@@ -9,50 +9,45 @@
 
  .header__container {
      display: flex;
-     justify-content: space-between;
-     align-content: center;
-     align-items: center;
+     position: relative;
  }
 
- .btn-mob-menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    border: transparent;
-    color: var(--accent-cl);
-    cursor: pointer;
+   .menu-button {
+       position: absolute;
+       z-index: 10;
+       top: 0;
+       bottom: 0;
+       right: 0;
 
-    transition: color var(--transition-duration) var(--transition-timing-function);
+       border: 0;
+       background-color: transparent;
+       fill: var(--accent-cl);
 
-    &:hover {
-        color: var(--white-cl);
-    }
+       @include mq(tablet) {
+           display: none;
+       }
+   }
 
+   .menu-button:hover .icon-menu,
+   .menu-button:focus .icon-menu {
+       fill: white;
+   }
 
-    &__icon {
-            stroke: currentColor;
-        }
-    
-        &__cross {
-            fill: var(--white-cl);
-        }
-    }
-    
-    .mob-menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-color: #E17992;
-        z-index: 100;
-        transform: translateX(100%);
-    }
-    
-    .mob-menu.is-open {
-        transform: translateX(0);
-    }
+   .menu-button:hover .icon-cross,
+   .menu-button:focus .icon-cross {
+        fill: white;
+   }
+
+   .icon-cross {
+       display: none;
+   }
+
+   .menu-button.is-open .icon-cross {
+       display: block;
+   }
+
+   .menu-button.is-open .icon-menu {
+       display: none;
+   }
+
  /*#endregion*/
