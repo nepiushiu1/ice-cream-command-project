@@ -13,7 +13,6 @@
 
 .gallery--list{
 padding: 0;
-
     @include mq(mobile){
         display: flex;
         flex-flow: column wrap;
@@ -28,12 +27,11 @@ padding: 0;
     display: flex;
     align-self: center;
     justify-content: center;
+    
 }
 
 }
-
-
-.flex{
+.gallery--item__flex{
     @include mq(mobile){
         display: flex;
         justify-content: center;
@@ -42,7 +40,7 @@ padding: 0;
 
    
  li{
-    text-decoration: none;
+
     list-style: none;
  }
 
