@@ -1,55 +1,41 @@
-/*#region 1 header*/
- .header {
-     padding-top: 8px;
-     position: fixed;
-     top: 0;
-     z-index: 10;
-     background-color: rgba(255, 184, 202, 0.9);
- }
+.header {
+    width: 100vw;
+    padding-top: 8px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: rgba(255, 184, 202, 0.9);
+}
 
- .header__container {
-     display: flex;
-     position: relative;
- }
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
 
- .menu-button {
-       position: absolute;
-       z-index: 10;
-       top: 0;
-       bottom: 0;
-       right: 0;
-       cursor: pointer;
+.menu-button {
+    padding: 0px;
+    cursor: pointer;
 
-       border: 0;
-       background-color: transparent;
-       fill: var(--accent-cl);
-       transition: fill var(--transition-duration) var(--transition-timing-function);
+    border: transparent;
+    background-color: transparent;
+    transition: color var(--transition-duration) var(--transition-timing-function);
 
-       @include mq(tablet) {
-           display: none;
-       }
-   }
+    &:hover,
+    &:focus {
+        color: #ffffff;
+    }
 
-   .menu-button:hover .icon-menu,
-   .menu-button:focus .icon-menu {
-       fill: white;
-   }
+    @include mq(tablet) {
+        display: none;
+    }
+}
 
-   .menu-button:hover .icon-cross,
-   .menu-button:focus .icon-cross {
-        fill: white;
-   }
+.burger__btn {
+    color: var(--accent-cl);
+}
 
-   .icon-cross {
-       display: none;
-   }
-
-   .menu-button.is-open .icon-cross {
-       display: block;
-   }
-
-   .menu-button.is-open .icon-menu {
-       display: none;
-   }
-
- /*#endregion*/
+.burger {
+    fill: currentColor;
+}
