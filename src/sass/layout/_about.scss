@@ -1,23 +1,58 @@
 .about {
     background-color: var(--light-pink-bg-cl);
-    background-repeat: no-repeat;
-    background-position: 50% 550px;
-    background-image: url(../images/about/about-bg_sm.png);
 
-    @include mq(retina) {
-        background-image: url(../images/about/about-bg_sm@2x.png);
+    &__label{
+        margin-bottom: 15px;
+        @include mq(tablet){
+            margin-bottom: 16px;
+            @include fonts(400, 26px, 30px, 0.04em, uppercase);
+        }
     }
 
     &__title {
         margin-bottom: 32px;
+        @include mq(tablet) {
+            margin-bottom: 40px;
+            @include fonts(400, 48px, 55px, 0.04em, uppercase);
+        }
+    }
+
+    &__content{
+        @include mq(tablet){
+            display: flex;
+            align-items: flex-start;
+        }
+        
     }
 
     &__thumb{
+        position: relative;
         margin-bottom: 40px;
+
+        @include mq(tablet){
+            margin-right: 32px;
+            margin-bottom: 0px;
+            width: 336px;
+            height: 335px;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: 395px;
+        left: 0;
+    
+        @include mq(tablet) {
+            display: none;
+        }
     }
 
     &__list{
         margin-bottom: 15px;
+
+        @include mq(tablet){
+            margin-bottom: 40px;
+        }
     }
 
     &__item {
@@ -28,11 +63,17 @@
 
         font-weight: 500;
         line-height: 1.62;
+
+        @include mq(tablet){
+            width: 334px;
+            font-size: 14px;
+            line-height: 1.76;
+        }
     }
 
     &__item:first-child{
         color: var(--black-cl);
-        margin-bottom: 20px;
+        margin-bottom: 25px;
     }
 
     &__item:last-child{
@@ -40,37 +81,21 @@
     }
 
     &__btn {
+        display: flex;
+        align-items: center;
+
         padding: 13px 37px;
         min-width: 176px;
-        border-radius: 22px;
-        border: none;
 
         @include fonts(700, 14px, 18px, null);
         text-align: center;
+    }
 
-        &__btn:hover,
-        &__btn:focus {
-            background-color: #ECEBEB;
-            ;
-        }
+    &__icon {
+        fill: transparent;
+        margin-left: 14px;
     }
 }
 
-.sub-title {
-    margin-bottom: 15px;
 
-    color: var(--pink-cl);
-
-    font-family: var(--title-font);
-    @include fonts(400, 18px, 21px, null, uppercase);
-    text-align: center;
-}
-
-.section-title {
-    color: var(--accent-cl);
-
-    font-family: var(--title-font);
-    @include fonts(400, 34px, 39px, 0.04em, uppercase);
-    text-align: center;
-}
 

@@ -13,6 +13,10 @@
         border-color: 1px solid grey;
         padding: 40px 32px;
         margin-bottom: 20px;
+
+        @include mq(tablet) {
+            --items: 3;
+        }
     }
 
     &__item:last-child {
@@ -129,6 +133,12 @@
     @include centeredFlex(flex);
     flex-direction: column;
 
+    &__item {
+    @include mq(tablet) {
+            --items: 2;
+        }
+    }
+
     &__item:not(:last-child) {
         margin-bottom: 10px;
     }
@@ -136,6 +146,11 @@
     &__icon {
         fill: transparent;
     } 
+
+    &__btn {
+        height: 44px;
+    }
+
 }
 
 /* Modalka */
@@ -168,14 +183,9 @@
     position: relative;
     width: 90%;
 
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.2);
 
     transition: transform var(--transition-duration) var(--transition-timing-function);
-
-    // @include mq(mobile) { 
-    //     max-width: 450px;
-    //     width: 100%;
-    // }
 
     @include mq(tablet) {
         position: absolute;

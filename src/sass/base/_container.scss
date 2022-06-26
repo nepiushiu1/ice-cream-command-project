@@ -19,16 +19,10 @@
   // tablet sreen from 768px
   @include mq(tablet) {
     width: 768px;
-
-    padding-left: 32px;
-    padding-right: 32px;
   }
 
   // desktop sreen from 1200px
   @include mq(desktop) {
     width: 1200px;
-
-    padding-left: 16px;
-    padding-right: 16px;
   }
 }
