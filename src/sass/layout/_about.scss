@@ -35,6 +35,11 @@
             width: 336px;
             height: 335px;
         }
+
+        @include mq(desktop){
+            width: 501px;
+            height: 501px;
+        }
     }
 
     &__img {
