@@ -1,9 +1,10 @@
 /*#region 1 header*/
  .header {
      padding-top: 8px;
-
-     background-color: var(--pink-bg-cl);
-
+     position: fixed;
+     top: 0;
+     z-index: 999;
+     background-color: rgba(255, 184, 202, 0.9);
  }
 
  .header__container {
@@ -14,18 +15,25 @@
  }
 
  .btn-mob-menu {
-    height: 12px;
-    width: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
     background-color: transparent;
-    border: none;
+    border: transparent;
+    color: var(--accent-cl);
+    cursor: pointer;
+
+    transition: color var(--transition-duration) var(--transition-timing-function);
+
+    &:hover {
+        color: var(--white-cl);
+    }
+
 
     &__icon {
-            fill: var(--accent-cl);
+            stroke: currentColor;
         }
     
         &__cross {
@@ -47,7 +55,4 @@
     .mob-menu.is-open {
         transform: translateX(0);
     }
-
-
-
  /*#endregion*/
