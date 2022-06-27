@@ -1,12 +1,26 @@
 .about {
     background-color: var(--light-pink-bg-cl);
 
+    @include mq(desktop){
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position: 0 236px;
+        background-image: url(../images/about/bg-about_lg.png);
+
+        @include mq(retina){
+            background-image: url(../images/about/bg-about_lg@2x.png);
+        }
+    }
+
     &__label{
         margin-bottom: 15px;
         @include mq(tablet){
             margin-bottom: 16px;
             @include fonts(400, 26px, 30px, 0.04em, uppercase);
-        }
+        }    
+        @include mq(desktop){
+            @include fonts(400, 30px, 34px, 0.04em, uppercase);
+        }    
     }
 
     &__title {
@@ -15,12 +29,20 @@
             margin-bottom: 40px;
             @include fonts(400, 48px, 55px, 0.04em, uppercase);
         }
+        @include mq(desktop) {
+            margin-bottom: 60px;
+            @include fonts(400, 58px, 66px, 0.06em, uppercase);
+        }
     }
 
     &__content{
         @include mq(tablet){
             display: flex;
             align-items: flex-start;
+        }
+
+         @include mq(tablet) {
+            align-items: center;
         }
         
     }
@@ -37,6 +59,7 @@
         }
 
         @include mq(desktop){
+            margin-right: 99px;
             width: 501px;
             height: 501px;
         }
@@ -74,11 +97,23 @@
             font-size: 14px;
             line-height: 1.76;
         }
+
+        @include mq(desktop){
+            width: 463px;
+            margin-bottom: 32px;
+            line-height: 1.94;
+        }
     }
 
     &__item:first-child{
         color: var(--black-cl);
         margin-bottom: 25px;
+
+        @include mq(desktop){
+            margin-bottom: 32px;
+            font-size: 16px;
+            line-height: 1.76;
+        }
     }
 
     &__item:last-child{
@@ -94,6 +129,10 @@
 
         @include fonts(700, 14px, 18px, null);
         text-align: center;
+
+        @include mq(desktop){
+            @include fonts(700, 16px, 21px, null);
+        }
     }
 
     &__icon {
