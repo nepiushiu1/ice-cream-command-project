@@ -5,6 +5,13 @@
         background-size: 100%, contain;
         background-position: center;
         background-repeat: no-repeat;
+    
+    &__container {
+        @include mq(tablet-only) {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
 
     &__item {
         background: var(--white-cl);
