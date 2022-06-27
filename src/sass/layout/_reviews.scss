@@ -1,5 +1,27 @@
 .reviews {
-    padding-bottom: 0px;
+    @include mq(mobile-only) {
+        padding-bottom: 0px;
+    }
+
+    @include mq(tablet) {
+        padding-bottom: 20px;
+    }
+
+     @include mq(desktop) {
+        padding-bottom: 60px;
+    }
+}
+
+.reviews__container {
+    @include mq(tablet) {
+        padding-left: 74px;
+        padding-right: 74px;
+    }
+
+    @include mq(desktop) {
+        padding-left: 116px;
+        padding-right: 116px;
+    }
 }
 
 .slider__img {
@@ -8,11 +30,120 @@
     margin-bottom: 32px;
 }
 
-.text-container {
+.quotes-container {
     position: relative;
-    padding: 43px 58px 26px 65px;
+    @include mq(mobile-only) {
+        margin-bottom: 36px;
+    }
+    
+    @include mq(tablet) {
+        margin-bottom: 24px;
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 36px;
+    }
+}
+
+.quotes-container::before {
+    content: '';
+    display: block;
+    position: absolute;
+
+    @include mq(mobile-only) {
+        top: 30px;
+        left: 50px;
+        width: 54px;
+        height: 40px;
+    }
+
+    @include mq(tablet) {
+        top: 20px;
+        left: 10px;
+        width: 60px;
+        height: 40px;
+    }
+
+    @include mq(desktop) {
+        top: 32px;
+        left: 72px;
+    }
+    
+    background-image: url('../images/reviews/quotes.svg');
+    background-repeat: no-repeat;
+}
+
+.quotes-container::after {
+    content: '';
+    display: block;
+    position: absolute;
+
+    @include mq(mobile-only) {
+        bottom: -16px;
+        left: 44%;
+    }
+    
+    @include mq(tablet) {
+        bottom: -4px;
+        left: 47%;
+    }
+
+    @include mq(desktop) {
+        bottom: -16px;
+        left: 48%;
+    }
+
+    transform: translateY(50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--decoration-cl);
+}
+
+.marker-container::after {
+    content: '';
+    display: block;
+    position: absolute;
+
+    @include mq(mobile-only) {
+        bottom: -16px;
+        left: 50%;
+    }
+    
+    @include mq(tablet) {
+        bottom: -4px;
+        left: 50%;
+    }
+
+    @include mq(desktop) {
+        bottom: -16px;
+        left: 50%;
+    }
+
+    transform: translate(-50%, 50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--decoration-cl);
+}
+
+.text-container {
+    @include mq(mobile-only) {
+        padding: 43px 58px 26px 65px;
+    }
+
+    @include mq(tablet) {
+        padding: 37px 55px 44px 50px;
+    }
+
+    @include mq(desktop) {
+        padding: 47px 109px 39px;
+    }
+    
     background-color: #fafafa;
-    margin-bottom: 36px;
+
+    border: 1px dashed transparent;
+    transition: border var(--transition-duration) var(--transition-timing-function);
 }
 
 .text-container::before {
@@ -23,54 +154,96 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 74px 50px 17px;
+
+    @include mq(mobile-only) {
+        padding: 74px 50px 17px;
+    } 
+
+    @include mq(tablet) {
+        padding: 68px 6px 36px;
+    } 
+
+    @include mq(desktop) {
+        padding: 76px 74px 31px;
+    }
+
     background-origin: content-box;
     background-image: repeating-linear-gradient(#E1E1E1, transparent 2px, transparent 30px);
     background-repeat: no-repeat;
-}
-
-.slider__text {
-    position: relative;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 2.56;
-    text-align: center;
-    z-index: 0;
-
-    color: #000000;
-}
-
-.slider__text::before {
-    content: '';
-    display: block;
-    position: absolute;
-    left: -12px;
-    top: -13px;
-    background-image: url('../images/reviews/quotes.svg');
-    background-repeat: no-repeat;
-    width: 54px;
-    height: 40px;
-    z-index: -1;
 }
 
 .text-container::after {
     content: '';
     display: block;
     position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translate(-50%, 500%);
+
+    @include mq(mobile-only) {
+        bottom: -16px;
+        right: 44%;
+    }
+    
+    @include mq(tablet) {
+        bottom: -4px;
+        right: 47%;
+    }
+
+    @include mq(desktop) {
+        bottom: -16px;
+        right: 48%;
+    }
+
+    transform: translateY(50%);
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background-color: #C7133E
+    background-color: var(--decoration-cl);
+}
+
+.slider__text {
+    @include mq (mobile-only) {
+        @include fonts(500, 12px, 30px, 0.04em, false);
+    }
+
+    @include mq (tablet) {
+        @include fonts(500, 14px, 30px, 0.04em, false);
+    }
+
+    @include mq (desktop) {
+        @include fonts(500, 16px, 30px, 0.04em, false);
+    }
+    
+    position: relative;
+    text-align: center;
+
+    color: var(--black-cl);
+    transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.text-container:hover .slider__text {
+    color: var(--decoration-cl);
+}
+
+.text-container:hover {
+    border: 1px dashed var(--decoration-cl);
 }
 
 .slider__name {
     position: relative;
-    margin-bottom: 28px;
+
+    @include mq(mobile-only) {
+        margin-bottom: 27px;
+        @include fonts(500, 14px, 26px, 0.04em, false)
+    }
+
+    @include mq(tablet) {
+        margin-bottom: 35px;
+        @include fonts(500, 16px, 30px, 0.04em, false)
+    }
+
+    @include mq(desktop) {
+        margin-bottom: 40px;
+        @include fonts(500, 20px, 37px, 0.04em, false)
+    }
 
     font-family: 'DM Sans';
     font-style: normal;
@@ -80,34 +253,7 @@
 
     text-align: center;
 
-    color: #000000;
-}
-
-.slider__name::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(3100%, -500%);
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: #C7133E;
-}
-
-.slider__name::after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-    right: 0;
-    transform: translate(-3100%, -500%);
-    width: 4px;
-    height: 4px;
-    border-radius: 50%;
-    background-color: #C7133E;
+    color: var(--black-cl);
 }
 
 .reviews__slider .swiper-pagination {
