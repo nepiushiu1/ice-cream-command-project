@@ -6,9 +6,8 @@ new Swiper('.reviews__slider', {
         dynamicMainBullets: 1,
     },
 
-    touchRatio: 2,
+    touchRatio: 1,
     grabCursor: true,
-    spaceBetween: 20,
 
     keyboard: {
         enabled: true,
@@ -24,12 +23,26 @@ new Swiper('.reviews__slider', {
         disableOnInteraction: false,
     },
 
-    speed: 700,
-
     effect: 'coverflow',
     coverflowEffect: {
-    rotate: 30,
-    slideShadows: false,
-  },
+        rotate: 30,
+        slideShadows: false,
+    },
+    
+    breakpoints: {
+        320: {
+            spaceBetween: 40,
+            speed: 900
+        },
 
+        768: {
+            spaceBetween: 60,
+            speed: 1000
+        },
+
+        1200: {
+            spaceBetween: 100,
+            speed: 1400
+        },
+  }
 });
