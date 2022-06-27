@@ -1,24 +1,79 @@
 <section class="hero section">
   <div class="hero__container container">
-    <h1 class="hero__tagline">
-      ice cream<br />
-      made with<br />
-      <span class="hero__tagline--accent">passion</span>
-    </h1>
-    <ul class="hero__list list">
-      <li class="hero__item">
-        <a href="#products" class="hero__link hero__link--dark-mode"
-          >Products</a
-        >
-      </li>
-      <li class="hero__item hero__item">
-        <a href="#how" class="hero__link hero__link--light-mode link">
-          How it’s made?</a
-        >
-      </li>
-    </ul>
+    <div class="title-figure-wrapper">
+      <div class="title-list-wrapper">
+        <h1 class="hero__tagline">
+          ice cream<br />
+          made with<br />
+          <span class="hero__tagline--accent">passion</span>
+        </h1>
+        <ul class="hero__list list">
+          <li class="hero__item">
+            <a href="#products" class="hero__link hero__link--dark-mode"
+              >Products</a
+            >
+          </li>
+          <li class="hero__item hero__item">
+            <a href="#how" class="hero__link hero__link--light-mode link">
+              How it’s made?</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="figure-wrapper">
+        <div class="figure-block figure-block--first">
+          <div class="white-circle"></div>
+          <p class="figure-number">16</p>
+          <p class="figure-text">cafes</p>
+        </div>
+        <div class="figure-block figure-block--second">
+          <div class="white-circle"></div>
+          <p class="figure-number">23</p>
+          <p class="figure-text">food trucks</p>
+        </div>
+      </div>
+    </div>
+    <div class="milk-description-wrapper">
+      <div class="milk-container">
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../src/images/hero-img/milk_md.png    1x,
+              ../src/images/hero-img/milk_md@2x.png 2x
+            "
+            type="image/png"
+          />
+          <img
+            class="milk-img"
+            src="../src/images/hero-img/milk_md.png"
+            alt="jar with a milk"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+      <div class="milk-description">
+        <p class="milk-description-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <a href="" class="product-btn milk-description-link">
+          <svg class="product-btn__icons" width="6" height="6">
+            <use href="./images/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
     <div class="ellipse hero__ellipse"></div>
     <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../src/images/hero-img/ice-cream_md.png    1x,
+          ../src/images/hero-img/ice-cream_md@2x.png 2x
+        "
+        type="image/png"
+      />
       <source
         media="(max-width: 767.98px)"
         srcset="
@@ -31,6 +86,22 @@
         class="hero__img hero__img-ice-cream"
         src="../src/images/hero-img/ice-cream_sm.png"
         alt="ice-cream"
+        loading="lazy"
+      />
+    </picture>
+    <picture>
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../src/images/hero-img/girl_md.png    1x,
+          ../src/images/hero-img/girl_md@2x.png 2x
+        "
+        type="image/png"
+      />
+      <img
+        class="girl-img"
+        src="../src/images/hero-img/girl_md.png"
+        alt="girl with ice-cream"
         loading="lazy"
       />
     </picture>
