@@ -1,18 +1,22 @@
 /*#region 8	Contacts */
+.container.contacts__сontainer {
+    @include mq(tablet-only) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }    
+}
+
 .contacts {
     background-image:
     linear-gradient(to bottom, #fff 20%, #FFF5F6 20%);
         background-size: 100%, contain;
         background-position: center;
         background-repeat: no-repeat;
-    
-    &__container {
-        @include mq(tablet-only) {
-            padding-left: 16px;
-            padding-right: 16px;
+        margin-bottom: 32px;
+        @include mq(tablet) {
+            margin-bottom: 60px;
         }
-    }
-
+        
     &__item {
         background: var(--white-cl);
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -24,10 +28,6 @@
         @include mq(tablet) {
             --items: 3;
         }
-    }
-
-    &__item:last-child {
-        margin-bottom: 32px;
     }
 }
 
@@ -137,17 +137,25 @@
 }
 
 .group-buttons {
-    @include centeredFlex(flex);
-    flex-direction: column;
-
-    &__item {
+    text-align: center;
+ 
     @include mq(tablet) {
-            --items: 2;
-        }
+       @include centeredFlex(flex);
     }
 
     &__item:not(:last-child) {
-        margin-bottom: 10px;
+        @include mq(mobile-only) {
+            margin-bottom: 10px;
+    }
+
+        @include mq(tablet) {
+            margin-right: 14px;
+    }
+
+        @include mq(desktop) {
+            margin-right: 12px;
+    }
+
     }
 
     &__icon {
