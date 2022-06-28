@@ -1,16 +1,27 @@
 .about {
     background-color: var(--light-pink-bg-cl);
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-repeat: no-repeat;
+    background-position: 50% 590px;
+    background-image: url(../images/about/bg-about_sm.png);
+
+    @include mq(retina){
+        background-image: url(../images/about/bg-about_sm@2x.png);
+    }
+
+    @include mq(tablet){
+        background-image: none;
+    }
 
     @include mq(desktop){
-        background-repeat: no-repeat;
-        background-position: center;
-        background-position: 0 236px;
+        background-position: 50% 236px;
         background-image: url(../images/about/bg-about_lg.png);
-        background-image: -webkit-image-set(url(../images/about/bg-about_lg.webp) 1x);
 
         @include mq(retina){
             background-image: url(../images/about/bg-about_lg@2x.png);
-            background-image: -webkit-image-set(url(../images/about/bg-about_lg@2x.webp) 2x)
         }
     }
 
@@ -50,7 +61,6 @@
     }
 
     &__thumb{
-        position: relative;
         margin-bottom: 40px;
 
         @include mq(tablet){
@@ -67,13 +77,15 @@
         }
     }
 
-    &__img {
-        position: absolute;
-        top: 395px;
-        left: 0;
-    
-        @include mq(tablet) {
-            display: none;
+    &__img{
+        @include mq(tablet){
+            width: 336px;
+            height: 335px;
+        }
+
+        @include mq(desktop){
+            width: 501px;
+            height: 501px;
         }
     }
 
@@ -86,7 +98,7 @@
     }
 
     &__item {
-        width: 220px;
+        width: 100%;
         margin-bottom: 15px;
 
         color: var(--about-cl);
