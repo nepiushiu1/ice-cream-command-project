@@ -4,7 +4,7 @@
     position: fixed;
     top: 0;
     z-index: 10;
-    // background-color: rgba(255, 184, 202, 0.3);
+    background-color: rgba(255, 184, 202, 0.3);
     @include mq(tablet) {
         padding-top: 32px;
     }
