@@ -1,8 +1,8 @@
 /*#region 6 Gallery*/
 .gallery {
-    padding: 0;
+    padding: 0 0 60px 0;
     margin: 0;
-    min-height: 100vh;
+
 
     background-image: linear-gradient(to top, #fff 88%, #fff5f6 88%);
     background-size: 100%, contain;
@@ -70,6 +70,8 @@
 
 }
 
+
+
 .large{
     
     @include mq(tablet-only){
@@ -115,17 +117,38 @@
         /* Градусы поворота можно изменить по необходимости */
 }
 
-.gallery--item__flex{
+.gallery--item__flex, .gallery--item__flexmobile{
 @include mq(mobile-only){
     display: flex;
+    justify-content: center;
 }
 
 }
 
-.gallery--img{
+.gallery--img,.gallery--img__large{
     display: block;
     -webkit-transition: all 1s ease;
         transition: all 1s ease;
+
+        
+}
+
+.gallery--img{
+@include mq(mobile-only) {
+        width: 89px;
+    }
+}
+
+.gallery--img__large{
+@include mq(mobile-only) {
+        width: 183px;
+    }
+}
+
+.photomobile{
+    @include mq(mobile-only) {
+           margin-bottom: auto;
+        }
 }
 
 li {
