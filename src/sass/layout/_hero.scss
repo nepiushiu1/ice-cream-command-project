@@ -14,9 +14,16 @@
 .hero__container {
   position: relative;
   z-index: 1;
-  min-width: 218px;
   padding-top: 134px;
   padding-bottom: 98px;
+
+  @include mq(mobile-gummy) {
+    width: 100%;
+  }
+
+  @include mq(mobile-fixed) {
+    width: 480px;
+  }
 
   @include mq(tablet-only) {
     padding-top: 32px;
@@ -173,7 +180,7 @@
   position: absolute;
   z-index: -10;
   top: 23px;
-  left: 36px;
+  right: -62px;
 
   @include mq(tablet-only) {
     top: -17px;
@@ -190,7 +197,7 @@
   position: absolute;
   z-index: -1;
   top: 33px;
-  left: 117px;
+  right: 32px;
 
   @include mq(tablet-only) {
     top: 20px;

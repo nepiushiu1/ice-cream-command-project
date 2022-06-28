@@ -1,5 +1,13 @@
 /*#region 8 Contacts */
 .container.contacts__сontainer {
+   @include mq(mobile-gummy) {
+        width: 100%;
+    }
+
+    @include mq(mobile-fixed) {
+        width: 480px;
+    }
+
     @include mq(tablet-only) {
         padding-left: 10px;
         padding-right: 10px;

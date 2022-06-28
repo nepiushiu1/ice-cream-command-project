@@ -2,38 +2,68 @@
     width: 100%;
     background: var(--light-pink-bg-cl);
     padding-top: 0px;
-}
-.advantages__list {
-    gap: 0;
-    max-width: 230px;
-}
+    
+    &__list {
+        @include mq(mobile-only) {
+            display: block;
+        }
+        @include mq(tablet) {
+            gap: 0;
+        }
+    }
+    &__item {
+        --items: 3;
+    }
+    &__item:not(:last-child) {
+        margin-bottom: 32px;
+        @include mq(tablet) {
+            margin-bottom: 0;
+        }
+    }
+    &__item::before {
+        display: block;
+        content: "";
+        height: 50px;
+        background-repeat: no-repeat;
+        background-position: left;
+        margin-bottom: 16px;
+        @include mq(tablet) {
+            margin-bottom: 36px;
+        }
+        @include mq(desktop) {
+            margin-bottom: 40px;
+        }
+    }
+    &__item:nth-child(1)::before {
+        background-image: url('/src/images/abvantages/bucketmilk.png');
+    }
+    &__item:nth-child(2)::before {
+        background-image: url('/src/images/abvantages/bucketapplepng.png');
+    }
+    &__item:nth-child(3)::before {
+        background-image: url('/src/images/abvantages/icecream.png');
+    }
+    &__item-title {
+        font-size: 36px;
+        margin-bottom: 19px;
+        text-align: left;
 
-.advantages__item:not(:last-child) {
-    margin-bottom: 32px;
+        @include mq(tablet) {
+            @include fonts(400, 48px, 55px, 0.04em, uppercase);
+            margin-bottom: 13px;
+        }
+        @include mq(desktop) {
+            @include fonts(400, 58px, 66px, 00.06em, uppercase);
+            margin-bottom: 16px;
+        }        
+    }
+    &__item-text {
+        max-width: 230px;
+        @include mq(tablet) {
+            max-width: 180px;
+        }
+        @include mq(desktop) {
+            max-width: 288px;
+        }
+    }
 }
-.advantages__item::before {
-    display: block;
-    content: "";
-    height: 50px;
-    background-repeat: no-repeat;
-    background-position: left;
-    margin-bottom: 16px;
-}
-.advantages__item:nth-child(1)::before {
-    background-image: url('/src/images/abvantages/bucketmilk.png');
-    // background-size: 33px 50px;
-}
-.advantages__item:nth-child(2)::before {
-    background-image: url('/src/images/abvantages/bucketapplepng.png');
-    // background-size: 50px 50px;
-}
-.advantages__item:nth-child(3)::before {
-    background-image: url('/src/images/abvantages/icecream.png');
-    // background-size: 44px 50px;
-}
-.advantages__item-title {
-    font-size: 36px;
-    margin-bottom: 19px;
-    text-align: left;
-}
-
