@@ -47,17 +47,37 @@
         font-size: 36px;
         margin-bottom: 19px;
         text-align: left;
-
+        animation: color-animation 7s linear infinite;
+        --color-1: rgb(212, 99, 118);
+        --color-2: var(--accent-cl);
+        --color-3: var(--pink-cl);
         @include mq(tablet) {
-            @include fonts(400, 48px, 55px, 0.04em, uppercase);
+        @include fonts(400, 48px, 55px, 0.04em, uppercase);
             margin-bottom: 13px;
         }
+        
         @include mq(desktop) {
-            @include fonts(400, 58px, 66px, 00.06em, uppercase);
-            margin-bottom: 16px;
-        }        
+        @include fonts(400, 58px, 66px, 00.06em, uppercase);
+                margin-bottom: 16px;
+        }
     }
+        @keyframes color-animation {
+            0% {color: var(--color-1)}
+            32% {color: var(--color-1)}
+            33% {color: var(--color-2)}
+            65% {color: var(--color-2)}
+            66% {color: var(--color-3)}
+            99% {color: var(--color-3)}
+            100% {color: var(--color-1)}
+        }
+                
     &__item-text {
+        font-family: var(--main-font);
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.71;
+        color: #000000;
+
         max-width: 230px;
         @include mq(tablet) {
             max-width: 180px;
