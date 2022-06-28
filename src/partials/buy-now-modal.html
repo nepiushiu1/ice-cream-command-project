@@ -5,8 +5,33 @@
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
+
+    <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ../src/images/hero-img/ice-cream_md.png    1x,
+            ../src/images/hero-img/ice-cream_md@2x.png 2x
+          "
+          type="image/png"
+        />
+        <source
+          media="(max-width: 767.98px)"
+          srcset="
+            ../src/images/hero-img/ice-cream_sm.png    1x,
+            ../src/images/hero-img/ice-cream_sm@2x.png 2x
+          "
+          type="image/png"
+        />
+        <img
+          class="hero__img hero__img-ice-cream"
+          src="../src/images/hero-img/ice-cream_sm.png"
+          alt="ice-cream"
+          loading="lazy"
+        />
+      </picture>
+
     <strong class="modal-title">Оставьте заявку</strong>
-    modal-form
     <form class="modal-form" autocomplete="off">
       Данные пользователя
       <label class="modal-form__group">
