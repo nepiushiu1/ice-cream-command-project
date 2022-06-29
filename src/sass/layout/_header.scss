@@ -4,14 +4,16 @@
     position: fixed;
     top: 0;
     z-index: 10;
-    // background-color: rgba(255, 184, 202, 0.3);
     @include mq(tablet) {
         padding-top: 32px;
     }
 
     @include mq(desktop) {
         padding-top: 37px;
+        
     }
+
+    
 }
 
 .header__container {
@@ -21,6 +23,24 @@
     
 }
 
+.site-nav {
+    @include mq(not-desktop) {
+        display: none;
+    }
+    
+    @include mq(desktop) {
+        display: flex;
+        gap: 35px;
+    
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+    
+        color: #ffffff;
+    }
+
+    
+}
 
 .menu-button {
     padding: 0px;
