@@ -23,7 +23,7 @@
     
 }
 
-.nav__list {
+.site-nav {
     @include mq(not-desktop) {
         display: none;
     }
@@ -38,6 +38,8 @@
     
         color: #ffffff;
     }
+
+    
 }
 
 .menu-button {
