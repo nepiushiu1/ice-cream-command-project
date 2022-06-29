@@ -35,7 +35,7 @@
 
   padding: 20px;
   width: 90%;
-  max-width: 450px;
+  max-width: 530px;
   margin-top: 60px;
 
   background-color: var(--white-cl);
@@ -47,14 +47,11 @@
     var(--transition-timing-function);
 
   @include mq(tablet) {
-    position: absolute;
     top: 40%;
-    left: 50%;
     transform: translate(-50%, -50%) scale(0.9);
   }
 
   @include mq(desktop) {
-    max-width: 530px;
     width: 100%;
   }
 
@@ -167,7 +164,7 @@
   }
 
   &__input:valid:not(:placeholder-shown) {
-    border-color: #69e883;
+    border-color: #295b33;
   }
 
   /* Стилизация иконок */
@@ -182,7 +179,7 @@
   }
 
   &__input:valid:not(:placeholder-shown) ~ &__icon {
-    fill: #69e883;
+    fill: #295b33;
   }
 
   &__input:focus ~ &__icon {
