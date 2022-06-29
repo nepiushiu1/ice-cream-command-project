@@ -8,10 +8,12 @@
 .contacts__section {
     @include mq(mobile-only) {
         padding-bottom: 40px;
+        padding-top: 0px;
     }
 
     @include mq(tablet) {
         padding-bottom: 40px;
+        padding-top: 0px;
     }
 
     @include mq(desktop) {
