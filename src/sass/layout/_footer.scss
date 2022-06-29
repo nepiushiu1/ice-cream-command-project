@@ -3,6 +3,14 @@
 }
 
 .footer__container {
+  @media screen and (max-width: 479.98px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767.98px) {
+    width: 480px;
+  }
+
   @include mq(tablet-only) {
     padding-right: 16px;
     padding-left: 16px;
@@ -29,6 +37,7 @@
   margin-bottom: 16px;
 
   @include mq(mobile) {
+    display: inline-block;
     width: 232px;
   }
 
@@ -91,8 +100,8 @@
   border-radius: 50%;
   background-color: #fea5bb;
 
-  transition: background-color var(--transition-timing-function),
-    color var(--transition-timing-function);
+  transition: background-color var(--transition-duration),
+    color var(--transition-duration);
 
   &:hover,
   &:focus {
