@@ -46,54 +46,52 @@
 
 /*window-product section-cream*/
 .window-product {
-  position: absolute;
+  height: 470px;
   border-radius: 24px;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-left: 40px;
   padding-right: 40px;
-
-  transform: translateY(100px);
-
+  position: absolute;
+  transform: translateY(-100%);
   ::-webkit-scrollbar {
     width: 5px;
   }
+  background-color: var(--pink-bg-cl);
 }
 .window-product.is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
-.window-product--box {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
 
 .window-product--btn {
-  border-radius: 50%;
-  border: none;
-  width: 20px;
-  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--pink-cl);
+  width: 40px;
+  height: 40px;
+  background-color: var(--white-cl);
+  border: none;
+  border-radius: 50%;
+  margin-bottom: 40px;
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    background-color: rgba(237, 158, 177, 0.561);
+    background-color: var(--pink-cl);
   }
 }
 .window-product--svg {
-  fill: var(--white-cl);
+  fill: var(--accent-cl);
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .window-product--btn:hover .window-product--svg,
 .window-product--btn:focus .window-product--svg {
-  fill: var(--accent-cl);
+  fill: var(--white-cl);
 }
 
 .window-product--name {
@@ -105,9 +103,9 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: var(--accent-cl);
-  margin-top: 10px;
-  margin-bottom: 10px;
+  color: var(--white-cl);
+  margin-top: 160px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -115,11 +113,11 @@
 
 .window-product--description {
   overflow: auto;
-  height: 330px;
+  height: 180px;
   padding-top: 8px;
   text-align: center;
   letter-spacing: 0.04em;
-  color: var(--pink-cl);
+  color: var(--white-cl);
   max-width: 200px;
   margin-bottom: 32px;
   font-size: 14px;
@@ -127,13 +125,13 @@
   font-weight: 700;
   line-height: 1.5;
 }
-.window-product--box::before {
+.window-product::before {
   content: '';
   display: inline-block;
   width: 280px;
   height: 280px;
   position: absolute;
-  transform: translateY(-60%);
+  transform: translateY(-50%);
   background-image: url(../images/products/ice-cream_mob.png);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -168,16 +166,17 @@
     }
   }
 }
-/*window-product section-coffee*/
+/*window-product section-coffee */
 .window-coffee-product {
-  position: absolute;
+  height: 470px;
   border-radius: 24px;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding-left: 40px;
   padding-right: 40px;
-
-  transform: translateY(100px);
-
+  position: absolute;
+  transform: translateY(-100%);
   ::-webkit-scrollbar {
     width: 5px;
   }
@@ -187,20 +186,16 @@
   opacity: 0;
   pointer-events: none;
 }
-.window-coffee--box {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
 
 .window-coffee--btn {
-  border-radius: 50%;
-  border: none;
-  width: 20px;
-  height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  margin-bottom: 40px;
   background-color: rgb(240, 209, 165);
   transition-duration: 400ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -230,8 +225,8 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: rgb(221, 176, 113);
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 160px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -239,7 +234,7 @@
 
 .window-coffee--description {
   overflow: auto;
-  height: 330px;
+  height: 180px;
   padding-top: 8px;
   text-align: center;
   letter-spacing: 0.04em;
@@ -251,14 +246,14 @@
   font-weight: 700;
   line-height: 1.5;
 }
-.window-coffee--box::before {
+.window-coffee-product::before {
   content: '';
   display: inline-block;
   background-image: url(../images/products/ice-coffee_mob.png);
   width: 280px;
   height: 280px;
   position: absolute;
-  transform: translateY(-60%);
+  transform: translateY(-50%);
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -418,13 +413,14 @@
 
 /*products-box*/
 .products__item--box {
+  height: 470px;
   border-radius: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-left: 40px;
   padding-right: 40px;
-
+  position: relative;
   @include mq(tablet) {
     padding-left: 32px;
     padding-right: 32px;

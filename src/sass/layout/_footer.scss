@@ -144,7 +144,12 @@
 
   text-align: right;
 
-  color: var(--accent-cl);
+  transition: color var(--transition-duration);
+
+  &:hover,
+  &:focus {
+    color: #907e82;
+  }
 
   @include mq(tablet) {
     font-size: 14px;
