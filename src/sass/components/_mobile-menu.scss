@@ -19,7 +19,7 @@
         right: 0;
 
         width: 100%;
-        height: 100%;
+        height: 100vh;
         padding: 60px 20px 20px;
 
         display: flex;
@@ -30,6 +30,12 @@
         transform: translateX(0%);
 
         transition: transform var(--transition-duration) var(--transition-timing-function);
+
+        @include mq(tablet) {
+            width: 254px;
+        }
+
+        z-index: 100;
     }
 
     @include mq(desktop) {

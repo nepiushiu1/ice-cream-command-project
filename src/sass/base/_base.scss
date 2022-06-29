@@ -12,6 +12,10 @@ body {
   @include fonts(700, 12px, 20px, 0.02em);
 }
 
+body.map-open {
+  overflow: hidden;
+}
+
 h1,
 h2,
 h3,
