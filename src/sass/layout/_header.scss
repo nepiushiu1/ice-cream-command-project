@@ -75,5 +75,8 @@
   align-content: center;
   align-items: center;
   gap: 32px;
-  margin-left: auto;
+
+  @include mq(not-desktop) {
+    margin-left: auto;
+  }
 }
