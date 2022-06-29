@@ -5,9 +5,8 @@
 }
 
 .mobile-menu.is-closed .mobile-menu__container {
-
-    transform: translateX(100%);
-
+  transform: translateX(100%);
+}
 
 .mobile-menu {
   opacity: 1;
@@ -55,8 +54,6 @@
     justify-content: center;
     gap: 16px;
     text-align: center;
-
-
 
     padding-left: 48px;
     padding-right: 48px;
