@@ -5,7 +5,7 @@
 }
 
 .mobile-menu.is-closed .mobile-menu__container {
-    transform: translateX(-100%);
+    transform: translateX(100%);
 }
 
 .mobile-menu {
@@ -137,4 +137,8 @@
 
    color: var(--accent-cl);
     
+}
+
+.buy__btn:hover, .buy__btn:focus {
+    color: blue
 }
