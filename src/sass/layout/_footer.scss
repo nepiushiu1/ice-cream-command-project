@@ -141,7 +141,7 @@
   text-decoration: none;
   display: block;
   @include fonts(700, 12px, 21px, 0.04em);
-
+  color: var(--accent-cl);
   text-align: right;
 
   transition: color var(--transition-duration);
