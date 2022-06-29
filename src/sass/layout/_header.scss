@@ -4,17 +4,8 @@
     position: fixed;
     top: 0;
     z-index: 10;
-    @include mq(tablet) {
-        padding-top: 32px;
-    }
-
-    @include mq(desktop) {
-        padding-top: 37px;
-        
-    }
-
-    
-}
+    min-height: 80px;
+}   
 
 .header__container {
     display: flex;
@@ -27,19 +18,23 @@
     @include mq(not-desktop) {
         display: none;
     }
-    
-    @include mq(desktop) {
+
+    &__list {
         display: flex;
-        gap: 35px;
-    
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 21px;
-    
-        color: #ffffff;
+        gap: 35px;        
     }
 
-    
+    &__item {
+        @include fonts(700, 16px, 21px, 0.04em);
+        color: var(--white-cl);
+    }
+
+    &__link {
+        @include mq(tablet) {
+         padding-top: 16px;
+         padding-bottom: 16px;
+      }
+    }
 }
 
 .menu-button {
