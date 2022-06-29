@@ -6,34 +6,13 @@
 .section-label {
     font-family: var(--title-font);
     text-align: center;
-
-    @include mq(mobile-only) {
-      @include fonts(400, 18px, 21px, 0.04em, uppercase);
-    }
-
-    @include mq(tablet) {
-      @include fonts(400, 26px, 30px, 0.04em, uppercase);
-    }
-
-    @include mq(desktop) {
-      @include fonts(400, 30px, 34px, 0.04em, uppercase);
-    }
+    @include fonts(400, 18px, 21px, 0.04em, uppercase);
     color: var(--pink-cl);
   }
 
 .section-title {
     font-family: var(--title-font);
     text-align: center;
-    @include mq(mobile-only) {
-        @include fonts(400, 34px, 39px, 0.04em, uppercase);
-      }
-
-    @include mq(tablet) {
-      @include fonts(400, 48px, 55px, 0.04em, uppercase);
-    }
-
-    @include mq(desktop) {
-      @include fonts(400, 58px, 66px, 0.06em, uppercase);
-    }
+    @include fonts(400, 34px, 39px, 0.04em, uppercase);
     color: var(--accent-cl);
   }

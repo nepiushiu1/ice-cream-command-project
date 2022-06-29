@@ -42,7 +42,6 @@
           type="text"
           name="user-name"
           placeholder=" "
-          pattern="[a-z]{3,}"
         />
         <span class="modal-form__alert modal-form__alert--warning">
           only english letters
@@ -84,8 +83,6 @@
           type="phone"
           name="user-phone"
           placeholder=" "
-          pattern="\+?[0-9\s\-\(\)]+"
-
         />
 
         <span class="modal-form__alert modal-form__alert--warning">
@@ -124,8 +121,7 @@
       <label class="modal-form__group">
               <span class="modal-form__label">E-mail</span>
               <input class="modal-form__input" type="mail" name="user-mail" 
-              placeholder=" " 
-              pattern="^[\w~'`!@#№?$%^&*()=+<>|/\\.,:;\[\]{} \x22-]{6,25}$" required >
+              placeholder=" " >
             
               <span class="modal-form__alert modal-form__alert--warning">
                 only letters and special symbols
