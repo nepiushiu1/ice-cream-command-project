@@ -4,11 +4,7 @@
     position: fixed;
     top: 0;
     z-index: 10;
- 
-    @include mq(desktop) {
-        padding-top: 17px;
-        padding-bottom: 17px;  
-    }   
+    min-height: 80px;
 }   
 
 .header__container {
