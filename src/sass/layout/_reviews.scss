@@ -7,7 +7,7 @@
         padding-bottom: 20px;
     }
 
-     @include mq(desktop) {
+    @include mq(desktop) {
         padding-bottom: 60px;
     }
 }
@@ -32,10 +32,11 @@
 
 .quotes-container {
     position: relative;
+
     @include mq(mobile-only) {
         margin-bottom: 36px;
     }
-    
+
     @include mq(tablet) {
         margin-bottom: 24px;
     }
@@ -68,7 +69,7 @@
         top: 32px;
         left: 72px;
     }
-    
+
     background-image: url('../images/reviews/quotes.svg');
     background-repeat: no-repeat;
 }
@@ -82,7 +83,7 @@
         bottom: -16px;
         left: 44%;
     }
-    
+
     @include mq(tablet) {
         bottom: -4px;
         left: 47%;
@@ -109,7 +110,7 @@
         bottom: -16px;
         left: 50%;
     }
-    
+
     @include mq(tablet) {
         bottom: -4px;
         left: 50%;
@@ -139,7 +140,7 @@
     @include mq(desktop) {
         padding: 47px 109px 39px;
     }
-    
+
     background-color: #fafafa;
 
     border: 1px dashed transparent;
@@ -157,11 +158,11 @@
 
     @include mq(mobile-only) {
         padding: 74px 50px 17px;
-    } 
+    }
 
     @include mq(tablet) {
-        padding: 68px 6px 36px;
-    } 
+        padding: 68px 40px 36px;
+    }
 
     @include mq(desktop) {
         padding: 76px 74px 31px;
@@ -181,7 +182,7 @@
         bottom: -16px;
         right: 44%;
     }
-    
+
     @include mq(tablet) {
         bottom: -4px;
         right: 47%;
@@ -211,7 +212,7 @@
     @include mq (desktop) {
         @include fonts(500, 16px, 30px, 0.04em, false);
     }
-    
+
     position: relative;
     text-align: center;
 
@@ -265,7 +266,7 @@
     height: 12px;
 }
 
-.reviews__slider .swiper-pagination-bullet:first-child {
+.reviews__slider .swiper-pagination-bullet-active-main {
     background-image: url('../images/reviews/home.svg');
     border-radius: 0%;
     fill: currentColor;
