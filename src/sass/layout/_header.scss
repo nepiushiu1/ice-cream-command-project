@@ -4,14 +4,30 @@
     position: fixed;
     top: 0;
     z-index: 10;
-    min-height: 80px;
+
+    @include mq(tablet) {
+            padding-top: 32px;
+        }
+    
+    @include mq(desktop) {
+        padding-top: 37px;
+    }
+
+       
 }   
 
 .header__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; 
+
+    @include mq(mobile-gummy) {
+            width: 100%;
+        }
     
+        @include mq(mobile-fixed) {
+            width: 480px;
+        }
 }
 
 .site-nav {

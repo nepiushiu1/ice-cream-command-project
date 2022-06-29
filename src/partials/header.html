@@ -1,7 +1,7 @@
 <header class="header" id="header">
   <div class="container header__container">
     <a href="#home" alt="logo website icecreame">
-      <svg class="site-logo" width="199" height="50">
+      <svg class="logo__icon" width="199" height="50">
         <use href="./images/sprite.svg#logo"></use>
       </svg>
     </a>
@@ -26,7 +26,7 @@
       </ul>
     </nav>
 
-    <!-- mobile-menu-button -->
+    <!-- mobile-menu -->
     <div class="block-menu">
       <button
         class="menu-button burger__btn"
@@ -56,44 +56,44 @@
         </svg>
       </button>
     </div>
+  </div>
 
-    <div class="mobile-menu is-closed" id="mobile-menu" data-menu>
-      <div class="mobile-menu__container">
-        <button class="menu-button cross__btn" type="button" data-menu-close>
-          <svg class="cross" width="14" height="14">
-            <use href="./images/sprite.svg#icon-cross"></use>
-          </svg>
-        </button>
-        <button
-          class="menu-buy-btn btn btn--mode-light"
-          type="button"
-          data-modal-open
-        >
-          Buy now
-          <svg class="narrow" aria-label="narrow-right" width="10" height="12">
-            <use href="./images/sprite.svg#narrow-right-red"></use>
-          </svg>
-        </button>
-        <ul class="mobile-menu__nav list">
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link link" href="#home">Home</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link link" href="#products">Our products</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link link" href="#how"
-              >How it&#180;s made?</a
-            >
-          </li>
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link link" href="#about">About us</a>
-          </li>
-          <li class="mobile-menu__item">
-            <a class="mobile-menu__link link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
+  <div class="mobile-menu is-closed" id="mobile-menu" data-menu>
+    <div class="mobile-menu__container">
+      <button class="menu-button cross__btn" type="button" data-menu-close>
+        <svg class="cross" width="25" height="25">
+          <use href="./images/sprite.svg#icon-cross"></use>
+        </svg>
+      </button>
+
+      <button
+        class="mobile-menu__btn btn btn--mode-light"
+        type="button"
+        data-modal-open
+      >
+        Buy now
+        <svg class="narrow" aria-label="narrow-right" width="10" height="12">
+          <use href="./images/sprite.svg#narrow-right-red"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu__nav list">
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="#home">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="#about">About us</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="#how">How it&#180;s made?</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="#products">Our products</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link link" href="#contact">Contact</a>
+        </li>
+      </ul>
     </div>
   </div>
 </header>
