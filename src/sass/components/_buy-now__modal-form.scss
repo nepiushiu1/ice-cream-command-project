@@ -48,7 +48,7 @@
 
   @include mq(tablet) {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.9);
   }
@@ -127,6 +127,7 @@
   top: 10%;
   left: 50%;
   transform: translatex(-50%);
+  pointer-events: none;
 }
 
 .modal-form {
@@ -185,7 +186,7 @@
   }
 
   &__input:focus ~ &__icon {
-    fill: #ffc039;
+    fill: #936e1e;
   }
 
   &__input:invalid:not(:placeholder-shown) ~ &__icon {
@@ -210,13 +211,13 @@
     transition: opacity var(--transition-duration)
       var(--transition-timing-function);
   }
-
+  
   &__alert--error {
     color: #e22f37;
   }
 
   &__alert--warning {
-    color: #ffc039;
+    color: #936e1e;
   }
 
   &__alert__icon {
@@ -234,7 +235,7 @@
   }
 
   &__alert-icon--warning {
-    fill: #ffc039;
+    fill: #936e1e;
   }
 
   &__alert-icon--error {
