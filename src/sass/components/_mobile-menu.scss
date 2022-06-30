@@ -135,20 +135,6 @@
   stroke: var(--accent-cl);
 }
 
-.buy__btn {
-  @include mq(mobile-only) {
-    display: none;
-  }
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 16px;
-  text-align: center;
-
-  color: var(--accent-cl);
-}
-
 .buyNow-mobMenu {
   display: flex;
   align-items: center;

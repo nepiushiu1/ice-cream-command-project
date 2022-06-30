@@ -32,3 +32,31 @@
     }
   }
 }
+
+.buy-now__btn {
+  @include mq(mobile-only) {
+    display: none;
+  }
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+
+  color: var(--accent-cl);
+}
+
+.buy-now__btn-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 16px;
+  text-align: center;
+  margin-bottom: 32px;
+  max-width: 209px;
+
+  color: var(--accent-cl);
+}
+

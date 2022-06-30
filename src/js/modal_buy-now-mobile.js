@@ -1,8 +1,8 @@
 (() => {
   const refs = {
-    openmobMenuBtn: document.querySelector('[buyNow-mobile-open]'),
+    openmobMenuBtn: document.querySelector('[data-buyNow-mobile-open]'),
 
-    closemobMenuBtn: document.querySelector('[buyNow-mobile-close]'),
+    closemobMenuBtn: document.querySelector('[data-buyNow-mobile-close]'),
 
     buyNowMobile: document.querySelector('[data-modal]'),
   };
@@ -12,7 +12,7 @@
 
  
   function toggleModal() {
-    document.body.classList.toggle("buyNow-Mobile-open");
+    document.body.classList.toggle("modal-open");
     refs.buyNowMobile.classList.toggle('is-hidden');
   }
 })();
