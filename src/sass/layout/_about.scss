@@ -1,11 +1,11 @@
 .about {
     background-color: var(--light-pink-bg-cl);
-    max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
 
     background-repeat: no-repeat;
-    background-position: 50% 590px;
+    background-position-y: 570px;
+    background-size: contain;
     background-image: url(../images/about/bg-about_sm.png);
 
     @include mq(retina){
@@ -17,7 +17,7 @@
     }
 
     @include mq(desktop){
-        background-position: 50% 236px;
+        background-position-y: 236px;
         background-image: url(../images/about/bg-about_lg.png);
 
         @include mq(retina){
@@ -182,7 +182,7 @@
     color: var(--white-cl);
 
     @include mq(desktop) {
-        min-width: 528px;
+        width: 528px;
     }
     
     transform: translate(-50%, -50%) scale(1);
@@ -201,6 +201,11 @@
         @include mq(desktop) {
             @include fonts(400, 30px, 34px, 0.04em, uppercase);
         }
+    }
+
+    &__item:not(:first-child){
+        display: flex;
+        align-items: flex-start
     }
 
     &__text{
