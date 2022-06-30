@@ -224,6 +224,10 @@
         @include mq(tablet){
             display: flex;
             align-items: flex-start;
+            background-image: url('../images/about/milk_lg.webp');
+            background-repeat: no-repeat;
+            background-size: 213px 215px;
+            background-position: 300px;
         }
     }
 
