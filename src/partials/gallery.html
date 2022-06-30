@@ -1,192 +1,356 @@
 
 <section class="gallery">
-  <div class="container">
+  <div class="container gallery__container">
     <h2 class="section-title visually-hidden">gallery</h2>
-    <ul class="gallery--list list">
-      <li class="gallery--item">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="
-      ./images/gallery/desktop/gallerylg1.png 1x,
-      ./images/gallery/desktop/gallerylg1@2x.png 2x" type="image/png">
-
-            <source media="(min-width: 768px)" srcset="
-      ./images/gallery/tablet/gallerymd1.png 1x,
-      ./images/gallery/tablet/gallerymd1@2x.png 2x" type="image/png">
-
-          <source media="(max-width: 767px)" srcset="
-      ./images/gallery/tablet/gallerymd1.png 1x,
-      ./images/gallery/tablet/gallerymd1@2x.png 2x" type="image/png">
-          <img class="gallery--img" src="./images/gallery/tablet/gallerymd1.png" alt="" width="138" height="138">
-        </picture>
-       </li> 
-      <div class="gallery--item__flex ">
-        <li class="gallery--item">
+    <div class="photos">
+      <ul class="photos__list list">
+        <li class="photos__item photos__item--1 img__item img__item--10">
+            <picture>
+            <!-- Набір зображень для десктопних екранів -->
+            <source 
+            media="(min-width: 1200px)"
+            srcset="
+            ../src/images/gallery/img-1_lg.webp 1x,
+            ../src/images/gallery/img-1_lg@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Набір зображень для планшетних екранів -->
+            <source 
+            media="(min-width: 768px)"
+            srcset="
+            ../src/images/gallery/img-1_md.webp 1x,
+            ../src/images/gallery/img-1_md@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Набір зображень для мобільних екранів -->
+            <source 
+            media="(max-width: 767px)"
+            srcset="
+            ../src/images/gallery/img-1_lg.webp 1x,
+            ../src/images/gallery/img-1_lg@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Дефолтне зображення -->
+            <img class="photos__img photos__img--1"
+            src="../src/images/gallery/img-1_md.webp" 
+            loading="lazy"
+            alt="ice-cream">
+            </picture>
+        </li>
+        <li class="photos__item photos__item--sat">
+          <ul class="img__list img__list--sat list">
+            <li class="img__item img__item--2">
+              <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source 
+                media="(min-width: 1200px)"
+                srcset="
+                ../src/images/gallery/img-2_lg.webp 1x,
+                ../src/images/gallery/img-2_lg@2x.webp 2x"
+                type="image/webp"
+                />
+                <!-- Набір зображень для планшетних екранів -->
+                <source 
+                media="(min-width: 768px)"
+                srcset="
+                ../src/images/gallery/img-2_md.webp 1x,
+                ../src/images/gallery/img-2_md@2x.webp 2x"
+                type="image/webp"
+                />
+                <!-- Набір зображень для мобільних екранів -->
+                <source 
+                media="(max-width: 767px)"
+                srcset="
+                ../src/images/gallery/img-2_lg.webp 1x,
+                ../src/images/gallery/img-2_lg@2x.webp 2x"
+                type="image/webp"
+                />
+                <!-- Дефолтне зображення -->
+                <img class="photos__img photos__img--2"
+                src="../src/images/gallery/img-2_md.webp" 
+                loading="lazy"
+                alt="ice-cream">
+              </picture>
+            </li>
+            <li class="img__item img__item--3">
+              <picture>
+                <!-- Набір зображень для десктопних екранів -->
+                <source 
+                media="(min-width: 1200px)"
+                srcset="
+                ../src/images/gallery/img-3_lg.webp 1x,
+                ../src/images/gallery/img-3_lg@2x.webp 2x"
+                type="image/webp"
+                />
+                <!-- Набір зображень для планшетних екранів -->
+                <source 
+                media="(min-width: 768px)"
+                srcset="
+                ../src/images/gallery/img-3_md.webp 1x,
+                ../src/images/gallery/img-3_md@2x.webp 2x"
+                type="image/webp"
+                />
+                <!-- Набір зображень для мобільних екранів -->
+                <source 
+                media="(max-width: 767px)"
+                srcset="
+                ../src/images/gallery/img-3_lg.webp 1x,
+                ../src/images/gallery/img-3_lg@2x.webp 2x"
+                type="image/webp"
+                />
+                <!-- Дефолтне зображення -->
+                <img class="photos__img photos__img--3"
+                src="../src/images/gallery/img-3_md.webp" 
+                loading="lazy"
+                alt="ice-cream">
+              </picture>
+            </li>
+          </ul>
+        </li>
+        <li class="photos__item photos__item--faf">
+          <ul class="img__list img__list--faf list">
+            <li class="img__item img__item--4">
+              <picture>
+            <!-- Набір зображень для десктопних екранів -->
+            <source 
+            media="(min-width: 1200px)"
+            srcset="
+            ../src/images/gallery/img-4_lg.webp 1x,
+            ../src/images/gallery/img-4_lg@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Набір зображень для планшетних екранів -->
+            <source 
+            media="(min-width: 768px)"
+            srcset="
+            ../src/images/gallery/img-4_md.webp 1x,
+            ../src/images/gallery/img-4_md@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Набір зображень для мобільних екранів -->
+            <source 
+            media="(max-width: 767px)"
+            srcset="
+            ../src/images/gallery/img-4_lg.webp 1x,
+            ../src/images/gallery/img-4_lg@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Дефолтне зображення -->
+            <img class="photos__img photos__img--4"
+            src="../src/images/gallery/img-4_md.webp" 
+            loading="lazy"
+            alt="ice-cream">
+              </picture>
+            </li>
+            <li class="img__item img__item--5">
+              <picture>
+            <!-- Набір зображень для десктопних екранів -->
+            <source 
+            media="(min-width: 1200px)"
+            srcset="
+            ../src/images/gallery/img-5_lg.webp 1x,
+            ../src/images/gallery/img-5_lg@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Набір зображень для планшетних екранів -->
+            <source 
+            media="(min-width: 768px)"
+            srcset="
+            ../src/images/gallery/img-5_md.webp 1x,
+            ../src/images/gallery/img-5_md@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Набір зображень для мобільних екранів -->
+            <source 
+            media="(max-width: 767px)"
+            srcset="
+            ../src/images/gallery/img-5_lg.webp 1x,
+            ../src/images/gallery/img-5_lg@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Дефолтне зображення -->
+            <img class="photos__img photos__img--5"
+            src="../src/images/gallery/img-5_md.webp" 
+            loading="lazy"
+            alt="ice-cream">
+              </picture>
+            </li>
+          </ul>
+        </li>
+        <li class="photos__item photos__item--sas">
+          <ul class="img__list img__list--sas list">
+            <li class="img__item img__item--6">
+              <picture>
+            <!-- Набір зображень для десктопних екранів -->
+            <source 
+            media="(min-width: 1200px)"
+            srcset="
+            ../src/images/gallery/img-6_lg.webp 1x,
+            ../src/images/gallery/img-6_lg@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Набір зображень для планшетних екранів -->
+            <source 
+            media="(min-width: 768px)"
+            srcset="
+            ../src/images/gallery/img-6_md.webp 1x,
+            ../src/images/gallery/img-6_md@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Набір зображень для мобільних екранів -->
+            <source 
+            media="(max-width: 767px)"
+            srcset="
+            ../src/images/gallery/img-6_lg.webp 1x,
+            ../src/images/gallery/img-6_lg@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Дефолтне зображення -->
+            <img class="photos__img photos__img--6"
+            src="../src/images/gallery/img-6_md.webp" 
+            loading="lazy"
+            alt="ice-cream">
+              </picture>
+            </li>
+            <li class="img__item img__item--7">
+              <picture>
+            <!-- Набір зображень для десктопних екранів -->
+            <source 
+            media="(min-width: 1200px)"
+            srcset="
+            ../src/images/gallery/img-7_lg.webp 1x,
+            ../src/images/gallery/img-7_lg@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Набір зображень для планшетних екранів -->
+            <source 
+            media="(min-width: 768px)"
+            srcset="
+            ../src/images/gallery/img-7_md.webp 1x,
+            ../src/images/gallery/img-7_md@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Набір зображень для мобільних екранів -->
+            <source 
+            media="(max-width: 767px)"
+            srcset="
+            ../src/images/gallery/img-7_lg.webp 1x,
+            ../src/images/gallery/img-7_lg@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Дефолтне зображення -->
+            <img class="photos__img photos__img--7"
+            src="../src/images/gallery/img-7_md.webp" 
+            loading="lazy"
+            alt="ice-cream">
+              </picture>
+            </li>
+          </ul>
+        </li>
+        <li class="photos__item photos__item--ean">
+          <ul class="img__list img__list--ean list">
+            <li class="img__item img__item--8">
+              <picture>
+            <!-- Набір зображень для десктопних екранів -->
+            <source 
+            media="(min-width: 1200px)"
+            srcset="
+            ../src/images/gallery/img-8_lg.webp 1x,
+            ../src/images/gallery/img-8_lg@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Набір зображень для планшетних екранів -->
+            <source 
+            media="(min-width: 768px)"
+            srcset="
+            ../src/images/gallery/img-8_md.webp 1x,
+            ../src/images/gallery/img-8_md@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Набір зображень для мобільних екранів -->
+            <source 
+            media="(max-width: 767px)"
+            srcset="
+            ../src/images/gallery/img-8_lg.webp 1x,
+            ../src/images/gallery/img-8_lg@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Дефолтне зображення -->
+            <img class="photos__img photos__img--8"
+            src="../src/images/gallery/img-8_md.webp" 
+            loading="lazy"
+            alt="ice-cream">
+              </picture>
+            </li>
+            <li class="img__item img__item--9">
+              <picture>
+            <!-- Набір зображень для десктопних екранів -->
+            <source 
+            media="(min-width: 1200px)"
+            srcset="
+            ../src/images/gallery/img-9_lg.webp 1x,
+            ../src/images/gallery/img-9_lg@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Набір зображень для планшетних екранів -->
+            <source 
+            media="(min-width: 768px)"
+            srcset="
+            ../src/images/gallery/img-9_md.webp 1x,
+            ../src/images/gallery/img-9_md@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Набір зображень для мобільних екранів -->
+            <source 
+            media="(max-width: 767px)"
+            srcset="
+            ../src/images/gallery/img-9_lg.webp 1x,
+            ../src/images/gallery/img-9_lg@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Дефолтне зображення -->
+            <img class="photos__img photos__img--9"
+            src="../src/images/gallery/img-9_md.webp" 
+            loading="lazy"
+            alt="ice-cream">
+              </picture>
+            </li>
+          </ul>
+        </li>
+        <li class="photos__item photos__item--10 img__item img__item--10">
           <picture>
-            <source media="(min-width: 1200px)" srcset="
-            ./images/gallery/desktop/gallerylg2.png 1x,
-            ./images/gallery/desktop/gallerylg2@2x.png 2x" type="image/png">
-
-            <source media="(min-width: 768px)" srcset="
-            ./images/gallery/tablet/gallerymd2.png 1x,
-            ./images/gallery/tablet/gallerymd2@2x.png 2x" type="image/png">
-
-            <source media="(max-width: 767px)" srcset="
-            ./images/gallery/tablet/gallerymd2.png 1x,
-            ./images/gallery/tablet/gallerymd2@2x.png 2x" type="image/png">
-            <img class="gallery--img" src="./images/gallery/tablet/gallerymd2.png" alt="" width="138" height="138">
+            <!-- Набір зображень для десктопних екранів -->
+            <source 
+            media="(min-width: 1200px)"
+            srcset="
+            ../src/images/gallery/img-10_lg.webp 1x,
+            ../src/images/gallery/img-10_lg@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Набір зображень для планшетних екранів -->
+            <source 
+            media="(min-width: 768px)"
+            srcset="
+            ../src/images/gallery/img-10_md.webp 1x,
+            ../src/images/gallery/img-10_md@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Набір зображень для мобільних екранів -->
+            <source 
+            media="(max-width: 767px)"
+            srcset="
+            ../src/images/gallery/img-10_lg.webp 1x,
+            ../src/images/gallery/img-10_lg@2x.webp 2x"
+            type="image/webp"
+            />
+            <!-- Дефолтне зображення -->
+            <img class="photos__img photos__img--10"
+            src="../src/images/gallery/img-10_md.webp" 
+            loading="lazy"
+            alt="ice-cream">
           </picture>
         </li>
-
-        <li class="gallery--item ">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="
-          ./images/gallery/desktop/gallerylg3.png 1x,
-          ./images/gallery/desktop/gallerylg3@2x.png 2x" type="image/png">
-
-            <source media="(min-width: 768px)" srcset="
-          ./images/gallery/tablet/gallerymd3.png 1x,
-          ./images/gallery/tablet/gallerymd3@2x.png 2x" type="image/png">
-
-            <source media="(max-width: 767px)" srcset="
-          ./images/gallery/tablet/gallerymd3.png 1x,
-          ./images/gallery/tablet/gallerymd3@2x.png 2x" type="image/png">
-            <img class="gallery--img" src="./images/gallery/tablet/gallerymd3.png" alt="" width="138" height="138">
-          </picture>
-        </li>
-      </div>
-      <div class="gallery--item__flexmobile">
-        <li class="gallery--item large">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="
-        ./images/gallery/desktop/gallerylg4.png 1x,
-        ./images/gallery/desktop/gallerylg4@2x.png 2x" type="image/png">
-
-            <source media="(min-width: 768px)" srcset="
-        ./images/gallery/tablet/gallerymd4.png 1x,
-        ./images/gallery/tablet/gallerymd4@2x.png 2x" type="image/png">
-
-            <source media="(max-width: 767px)" srcset="
-        ./images/gallery/tablet/gallerymd4.png 1x,
-        ./images/gallery/tablet/gallerymd4@2x.png 2x" type="image/png">
-            <img class="gallery--img__large" src="./images/gallery/tablet/gallerymd4.png" alt="" width="283" height="283">
-          </picture>
-        </li>
-
-        <li class="gallery--item photomobile">
-
-          <picture>
-            <source media="(min-width: 1200px)" srcset="
-              ./images/gallery/desktop/gallerylg5.png 1x,
-              ./images/gallery/desktop/gallerylg5@2x.png 2x" type="image/png">
-
-            <source media="(min-width: 768px)" srcset="
-              ./images/gallery/tablet/gallerymd5.png 1x,
-              ./images/gallery/tablet/gallerymd5@2x.png 2x" type="image/png">
-
-            <source media="(max-width: 767px)" srcset="
-              ./images/gallery/tablet/gallerymd5.png 1x,
-              ./images/gallery/tablet/gallerymd5@2x.png 2x" type="image/png">
-            <img class="gallery--img" src="./images/gallery/tablet/gallerymd5.png" alt="" width="138" height="138">
-          </picture>
-        </li>
-      </div>
-      <div class="gallery--item__flex div1">
-        <li class="gallery--item">
-
-          <picture>
-            <source media="(min-width: 1200px)" srcset="
-              ./images/gallery/desktop/gallerylg6.png 1x,
-              ./images/gallery/desktop/gallerylg6@2x.png 2x" type="image/png">
-
-            <source media="(min-width: 768px)" srcset="
-              ./images/gallery/tablet/gallerymd6.png 1x,
-              ./images/gallery/tablet/gallerymd6@2x.png 2x" type="image/png">
-
-            <source media="(max-width: 767px)" srcset="
-              ./images/gallery/tablet/gallerymd6.png 1x,
-              ./images/gallery/tablet/gallerymd6@2x.png 2x" type="image/png">
-            <img class="gallery--img" src="./images/gallery/tablet/gallerymd6.png" alt="" width="138" height="138">
-          </picture>
-
-        </li>
-
-        <li class="gallery--item">
-
-          <picture>
-            <source media="(min-width: 1200px)" srcset="
-
-              ./images/gallery/desktop/gallerylg7.png 1x,
-              ./images/gallery/desktop/gallerylg7@2x.png 2x" type="image/png">
-
-            <source media="(min-width: 768px)" srcset="
-              ./images/gallery/tablet/gallerymd7.png 1x,
-              ./images/gallery/tablet/gallerymd7@2x.png 2x" type="image/png">
-
-            <source media="(max-width: 767px)" srcset="
-              ./images/gallery/tablet/gallerymd7.png 1x,
-              ./images/gallery/tablet/gallerymd7@2x.png 2x" type="image/png">
-            <img class="gallery--img" src="./images/gallery/tablet/gallerymd7.png" alt="" width="138" height="138">
-          </picture>
-
-        </li>
-      </div>
-
-      <div class="gallery--item__flex div2">
-        <li class="gallery--item">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="
-              ./images/gallery/desktop/gallerylg8.png 1x,
-              ./images/gallery/desktop/gallerylg8@2x.png 2x" type="image/png">
-
-            <source media="(min-width: 768px)" srcset="
-              ./images/gallery/tablet/gallerymd8.png 1x,
-              ./images/gallery/tablet/gallerymd8@2x.png 2x" type="image/png">
-
-            <source media="(max-width: 767px)" srcset="
-              ./images/gallery/tablet/gallerymd8.png 1x,
-              ./images/gallery/tablet/gallerymd8@2x.png 2x" type="image/png">
-            <img class="gallery--img" src="./images/gallery/tablet/gallerymd8.png" alt="" width="138" height="138">
-          </picture>
-
-        </li>
-
-        <li class="gallery--item">
-
-          <picture>
-            <source media="(min-width: 1200px)" srcset="
-           ./images/gallery/desktop/gallerylg9.png 1x,
-            ./images/gallery/desktop/gallerylg9@2x.png 2x" type="image/png">
-
-            <source media="(min-width: 768px)" srcset="
-            ./images/gallery/tablet/gallerymd9.png 1x,
-            ./images/gallery/tablet/gallerymd9@2x.png 2x" type="image/png">
-
-            <source media="(max-width: 767px)" srcset="
-
-            ./images/gallery/tablet/gallerymd9.png 1x,
-            ./images/gallery/tablet/gallerymd9@2x.png 2x" type="image/png">
-            <img class="gallery--img" src="./images/gallery/tablet/gallerymd9.png" alt="" width="138" height="138">
-
-</picture>
-
-        </li>
-      </div>
-      <li class="gallery--item">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="
-              ./images/gallery/desktop/gallerylg10.png 1x,
-              ./images/gallery/desktop/gallerylg10@2x.png 2x" type="image/png">
-
-          <source media="(min-width: 768px)" srcset="
-              ./images/gallery/tablet/gallerymd10.png 1x,
-              ./images/gallery/tablet/gallerymd10@2x.png 2x" type="image/png">
-
-          <source media="(max-width: 767px)" srcset="
-              ./images/gallery/tablet/gallerymd10.png 1x,
-              ./images/gallery/tablet/gallerymd10@2x.png 2x" type="image/png">
-          <img class="gallery--img" src="./images/gallery/tablet/gallerymd10.png" alt="" width="138" height="138">
-        </picture>
-      </li>
-    </ul>
+      </ul>
+    </div>
   </div>
 </section>
