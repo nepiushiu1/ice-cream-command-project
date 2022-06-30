@@ -179,7 +179,7 @@
 .img__item--7,
 .img__item--9 {
     transform: scale(1) rotate(0deg);
-    transition: transform var(--transition-duration) var(--transition-timing-function);
+    transition: transform 600ms var(--transition-timing-function);
 
     @include mq(mobile-only) {
         transform: scale(1) translate(0%, 0%);
@@ -204,7 +204,7 @@
 .img__item--6,
 .img__item--8 {
     transform: scale(1) rotate(0deg);
-    transition: transform var(--transition-duration) var(--transition-timing-function);
+    transition: transform 600ms var(--transition-timing-function);
 
     @include mq(mobile-only) {
         transform: scale(1) translate(0%, 0%);
@@ -228,7 +228,7 @@
 .img__item--5,
 .img__item--10 {
     transform: scale(1) rotate(0deg);
-    transition: transform var(--transition-duration) var(--transition-timing-function);
+    transition: transform 600ms var(--transition-timing-function);
 
     @include mq(mobile-only) {
         transform: scale(1) rotate(0deg);
@@ -251,7 +251,7 @@
 
 .img__item--4 {
     transform: scale(1) rotate(0deg);
-    transition: transform var(--transition-duration) var(--transition-timing-function);
+    transition: transform 600ms var(--transition-timing-function);
 
     @include mq(mobile-only) {
         transform: scale(1) rotate(0deg);
