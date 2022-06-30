@@ -135,14 +135,14 @@
     &__link {
         display: flex;
 
-        color: var(--about-cl);
-        fill: var(--about-cl);
+        color: var(--accent-cl);
+        fill: var(--accent-cl);
     }
 
     &__link:hover,
     &__link:focus {
-        color: var(--accent-cl);
-        fill: var(--accent-cl);
+        color: var(--pink-cl);
+        fill: var(--pink-cl);
     }
 
     &__icon {
@@ -185,3 +185,24 @@
         height: 44px;
     }
 }
+
+.modal-contact__text {
+    margin-bottom: 30px;
+}
+
+.modal-contact__link {
+    @include fonts(700, 24px, 28px, 0.04em);
+    color: var(--accent-cl);
+    transition:
+            color var(--transition-duration) var(--transition-timing-function);
+}
+
+.modal-contact__link:hover,
+.modal-contact__link:focus{
+    color: var(--pink-cl);
+}
+
+.modal-contact__link:visited {
+    color: var(--white-cl);
+}
+
