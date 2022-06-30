@@ -224,21 +224,21 @@
         @include mq(tablet){
             display: flex;
             align-items: flex-start;
-            background-image: url('../images/about/milk_lg.webp');
-            background-repeat: no-repeat;
-            background-size: 213px 215px;
-            background-position: 300px;
+            justify-content: space-between;
         }
     }
 
     &__bottom-text{
+        width: 100%;
         @include fonts(500, 12px, 20px, 0.04em);
         
             @include mq(tablet) {
+                width: 230px;
                 @include fonts(500, 14px, 24px, 0.04em);
             }
 
                         @include mq(desktop) {
+                            width: 245px;
                             @include fonts(500, 16px, 28px, 0.04em);
                         }
     }
