@@ -2,20 +2,20 @@
   "name": "ice-cream-project",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://daryna-pershyna.github.io/ice-cream-project",
+  "homepage": "https://github.com/nepiushiu1/ice-cream-command-project",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /ice-cream-project/"
+    "build": "parcel build src/*.html --public-url /ice-cream-command-project/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alvasar/ice-cream-project.git"
+    "url": "git+https://github.com/nepiushiu1/ice-cream-command-project.git"
   },
   "keywords": [],
   "author": "Plombeer-team <plombeer.team@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/alvasar/ice-cream-project/issues"
+    "url": "https://github.com/nepiushiu1/ice-cream-command-project/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"
